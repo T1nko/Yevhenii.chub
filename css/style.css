@@ -1,6 +1,10 @@
 body{
     font-family: "Arial";
-    margin: 5% 10% 5% 10%;
+    margin: 3% 0;
+}
+.inbody{
+    width: 900px;
+    margin: 0 auto;
 }
 .header {
     /*border: 2px solid red;*/
@@ -44,6 +48,7 @@ img {
 .content{
     border: 1px solid black;
     position: relative;
+
 }
 .skidka_1{
     background: red;
@@ -52,14 +57,14 @@ img {
     position: absolute;
     border-radius: 50%;
     opacity: 0.6;
-    left: 5%;
-    top: 3%;
+    left: 3%;
+    top: 4%;
 }
 .skidka{
 
     position: absolute;
-    left: 6%;
-    top: 8%;
+    left: 4%;
+    top: 9%;
     color: white;
     font-size: 42px;
     text-align: center;

@@ -15,8 +15,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="43" column="33" lean-forward="true" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
+                <state relative-caret-position="714">
+                  <caret line="42" column="18" lean-forward="true" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
@@ -28,11 +28,11 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="34">
-                  <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+                <state relative-caret-position="595">
+                  <caret line="65" column="11" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
                   <folding>
-                    <marker date="1553844129178" expanded="true" signature="77:99" ph="..." />
-                    <marker date="1553844129178" expanded="true" signature="1239:1251" ph="..." />
+                    <marker date="1553846202660" expanded="true" signature="117:139" ph="..." />
+                    <marker date="1553846202660" expanded="true" signature="1280:1292" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -127,12 +127,12 @@
       <workItem from="1552937978690" duration="14357000" />
       <workItem from="1553187247972" duration="21033000" />
       <workItem from="1553499649054" duration="8300000" />
-      <workItem from="1553693421087" duration="25986000" />
+      <workItem from="1553693421087" duration="27525000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74761000" />
+    <option name="totallyTimeSpent" value="76300000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -167,19 +167,19 @@
     <entry file="file://$PROJECT_DIR$/img/obyknovennaya_belka.jpg" />
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        <state relative-caret-position="595">
+          <caret line="65" column="11" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
           <folding>
-            <marker date="1553844129178" expanded="true" signature="77:99" ph="..." />
-            <marker date="1553844129178" expanded="true" signature="1239:1251" ph="..." />
+            <marker date="1553846202660" expanded="true" signature="117:139" ph="..." />
+            <marker date="1553846202660" expanded="true" signature="1280:1292" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="43" column="33" lean-forward="true" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
+        <state relative-caret-position="714">
+          <caret line="42" column="18" lean-forward="true" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
         </state>
       </provider>
     </entry>
