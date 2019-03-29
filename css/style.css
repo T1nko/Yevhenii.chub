@@ -1,67 +1,189 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+body{
+    font-family: "Arial";
+    margin: 5% 10% 5% 10%;
 }
-.top_img{
-    width: 100%;
+.header {
+    /*border: 2px solid red;*/
+    display: flex;
+    flex-direction: row;
+    height: 30px;
 }
-.menu_0 {
-    display: inline;
-    vertical-align: middle;
-    height: 150px;
-    margin: 50px 300px 50px 50px;
+.freespace{
+    /*margin: 0 35% 0 35%;*/
+    flex-grow: 20;
 }
-.menu {
-    background: aqua;
-    border: 1px solid aqua; /* Рамка */
-    display: inline-block;
-    text-decoration: none; /* Убираем подчёркивание */
-    color: black; /* Цвет текста */
+img {
+    width: auto;
+    height: auto;
+}
+.number{
+    display: flex;
+    justify-content: center;
+    /*border: 2px solid green;*/
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 0 0 5px;
+    flex-grow: 1;
+}
+.articul{
+    display: flex;
+    /*border: 2px solid magenta;*/
+    font-size: 20px;
+    color: gray;
+    flex-grow: 1;
+    justify-content: right;
+}
+.card_product {
+    /*border: 2px solid blue;*/
+    display: flex;
+    color: gray;
+    justify-content: left;
+    font-size: 20px;
+    flex-grow: 1;
+}
+.content{
+    border: 1px solid black;
+    position: relative;
+}
+.skidka_1{
+    background: red;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.6;
+    left: 5%;
+    top: 3%;
+}
+.skidka{
 
-}
-.menu:hover {
-    box-shadow: 0 0 5px rgba(0,0,0,0.3); /* Тень */
-    background: linear-gradient(to bottom, #1ef5ff, #e92edb); /* Градиент */
-    color: #a00;
-}
-.menu_1 {
-    background: aqua;
-    border: 1px solid aqua; /* Рамка */
-    display: inline-block;
-    padding: 50px 150px; /* Поля */
-    text-decoration: none; /* Убираем подчёркивание */
-    color: black; /* Цвет текста */
-
-}
-.menu_1:hover {
-    box-shadow: 0 0 5px rgba(0,0,0,0.3); /* Тень */
-    background: linear-gradient(to bottom, #1ef5ff, #e92edb); /* Градиент */
-    color: #a00;
-}
-h1 {
+    position: absolute;
+    left: 6%;
+    top: 8%;
+    color: white;
+    font-size: 42px;
     text-align: center;
 }
-.up {
-    color: black;
-    background: aqua;
-    border: 1px solid aqua; /* Рамка */
-    display: inline-block;
-    padding: 20px 70px; /* Поля */
-    text-decoration: none; /* Убираем подчёркивание */
-    margin: 20px;
-}
-.up:hover {
-    box-shadow: 0 0 5px rgba(0,0,0,0.3); /* Тень */
-    background: linear-gradient(to bottom, #1ef5ff, #e92edb); /* Градиент */
-    color: #a00;
-}
-footer{
+.Phone_name{
     text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: blue;
+    opacity: .5;
+    margin: 10px 0 0 0;
 }
-p,ul {
-    margin: 5px 200px;
+.photos {
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    width: 40%;
 }
-table{
-    margin: auto;
+.big_photo{
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    height: auto;
 }
+.small_pgoto {
+    display: flex;
+    justify-content: space-around;
+}
+.characteristics{
+    width: 40%;
+    margin: 2%;
+    flex-grow: 1;
+}
+.main{
+    display: flex;
+}
+.harater{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    opacity: .5;
+}
+li{
+    list-style: none;
+    font-size: 23px;
+}
+.display{
+    margin: 3% 10% 3% 10%;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.opis{
+    margin: 1% 5%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.detalno{
+    margin: 1% 5%;
+    font-size: 20px;
+}
+.opis_short{
+    margin: 1% 5%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/*.flexBox{*/
+    /*width: 1000px;*/
+    /*height: 500px;*/
+    /*border: 2px solid red;*/
+    /*margin: 0 auto;*/
+    /*display: flex;*/
+    /*align-items: center;  !*flex-start;  flex-end*!*/
+    /*justify-content: center; !*space-between;  end;  flex-start;  flex-end*!*/
+/*}*/
+/*.flexBox-item {*/
+    /*background: grey;*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+    /*border: 2px solid green;*/
+    /*margin: 10px;*/
+    /*justify-content: center;*/
+/*}*/
+/*.positionBox {*/
+    /*width: 1000px;*/
+    /*height: 500px;*/
+    /*border: 2px solid blue;*/
+/*}*/
+
+/*.positionBox-item {*/
+    /*margin: 10px;*/
+    /*background: blanchedalmond;*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+    /*border: 2px solid magenta;*/
+    /*!*font-family: Arial, SansSerif;*!*/
+/*}*/
+/*.posRelativ {*/
+    /*position: relative;*/
+    /*background: gold;*/
+    /*top: 100px;*/
+    /*left: 200px;*/
+/*}*/
+/*.posFixed {*/
+    /*background: red;*/
+    /*position: fixed;*/
+/*}*/
+/*.posAbsolute {*/
+    /*position: absolute; !*используется вместе с position: relative, то есть внутри него *!*/
+    /*background: aqua;*/
+    /*left: 300px;
+}*/
+
+/*justify-content: center; выравнивание по центру в родительском блоке*/
+/*justify-content: space-between;  растянуть внутри блока на равное расстояние*/
+/*justify-content: end;*/
