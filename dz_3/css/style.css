@@ -76,10 +76,10 @@ img {
     text-align: center;
     font-size: 70px;
     font-weight: bold;
-    text-decoration: underline;
+    border-bottom: 3px solid rgba(0, 0, 255, 0.51);
     color: blue;
     opacity: .5;
-    margin: 10px 0 0 0;
+    margin: 10px 5% 0 5%;
 }
 .photos {
     display: flex;
