@@ -1,13 +1,11 @@
 body{
     font-family: Arial, sans-serif;
     margin: 3% auto;
-    max-width: 70%;
-    min-width: 320px;
+    width: 1000px;
 }
 .header {
     display: flex;
-    flex-direction: row;
-    height: 2.5vw;
+    height: auto;
     width: 100%;
 }
 .freespace{
@@ -21,12 +19,12 @@ img {
     display: flex;
     color: gray;
     justify-content: left;
-    font-size: 2vw;
+    font-size: 20px;
     flex-grow: 1;
 }
 .articul{
     display: flex;
-    font-size: 2vw;
+    font-size: 20px;
     color: gray;
     flex-grow: 1;
     justify-content: right;
@@ -34,7 +32,7 @@ img {
 .number{
     display: flex;
     justify-content: center;
-    font-size: 2vw;
+    font-size: 20px;
     font-weight: bold;
     margin: 0 0 0 2px;
     flex-grow: 1;
@@ -47,138 +45,412 @@ img {
 }
 .Phone_name{
     text-align: center;
-    font-size: 6vw;
+    font-size: 70px;
     font-weight: bold;
     border-bottom: 3px solid rgba(0, 0, 255, 0.51);
     color: rgba(0, 0, 255, 0.51);
-    /*margin: 10px 5% 0 5%;*/
     padding-bottom: 15px;
     width: 100%;
+}
+.main{
+    display: flex;
 }
 .photos {
     display: flex;
     flex-direction: column;
-    /*margin: 2%;*/
-    width: 50%;
+    width: 46%;
+    margin: 2% 2%;
 }
 .big_photo{
     display: flex;
     justify-content: space-around;
     width: 100%;
-    /*height: auto;*/
     position: relative;
-    box-sizing: border-box;
 }
 .big_photo img{
     position: relative;
 }
 .skidka{
-    border-radius: 50%;
+    border-radius: 50% 50% 0 50%;
     position: absolute;
-    top: -7%;
+    top: -10%;
     left: 5%;
     background: rgba(255, 0, 0, 0.5);
     color: #ffffff;
-    font-size: 3vw;
-    width: 15vw;
-    height: 15vw;
+    font-size: 30px;
+    width: 140px;
+    height: 140px;
     display: inline-flex;
     text-align: center;
     align-items: center;
     z-index: 1;
-    box-sizing: border-box;
 }
 .small_photo {
     display: flex;
     justify-content: space-around;
-    width: 90%;
-    height: auto;
-    margin: 1% 5%;
+    width: 100%;
 }
 .small_photo img{
     width: 20%;
-    height: 70%;
     transition: all .5s;
 }
 .characteristics{
     width: 46%;
     margin: 2%;
-    font-size: 3vw;
-}
-.main{
-    display: flex;
+    font-size: 20px;
 }
 .harater{
     text-align: center;
-    font-size: 4vw;
+    font-size: 50px;
     font-weight: bold;
     opacity: .5;
     padding-bottom: 5px;
     border-bottom: 1px solid gray;
     width: 100%;
 }
-li{
-    list-style: none;
-    font-size: 2vw;
-}
 .display{
     margin: 3% 10% 3% 10%;
     display: flex;
     flex-direction: column;
-    font-size: 3vw;
+    font-size: 35px;
     text-decoration: underline;
     font-weight: bold;
     padding-top: 10px;
 }
+
+li{
+    list-style: none;
+    font-size: 25px;
+}
+
+.opis_short {
+    margin: 1% 5%;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    width: 90%;
+}
 .opis{
     margin: 1% 5%;
-    font-size: 2vw;
+    font-size: 20px;
     font-weight: bold;
     padding-top: 10px;
     width: 90%;
 }
 .detalno{
     margin: 1% 5%;
-    font-size: 2vw;
+    font-size: 20px;
     padding-bottom: 5px;
 }
-.opis_short {
-    margin: 1% 5%;
-    font-size: 3vw;
-    font-weight: bold;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid black;
-    width: 90%;
-}
 .img_1:hover {
-    transform: translate(8vw, -24vw) scale(4);
+    transform: translate(100px, -250px) scale(3);
     transition: all .5s;
 }
-.img_1:hover + .big_photo img {
-    background: white;
-    z-index: 1;
-}
 .img_2:hover {
-    transform: translate( 0vw, -24vw) scale(4);
+    transform: translate( 0, -250px) scale(3);
     transition: all .5s;
 }
 .img_3:hover {
-    transform: translate(-8vw, -24vw) scale(4);
+    transform: translate(0, -250px) scale(3);
     transition: all .5s;
 }
 .img_4:hover {
-    transform: translate(-15vw, -24vw) scale(4);
+    transform: translate(-90px, -250px) scale(3);
     transition: all .5s;
 
 }
 .skidka:hover{
     transform:  rotate(720deg);
     transition: all 1s;
+    background-color: rgba(8, 255, 29, 0.6);
 }
-p{
 
+@media screen and (max-width: 1020px){
+    body{
+        width: 800px;     /*  1000-200  */
+    }
+    .card_product {
+        font-size: 16px;   /*  20-4  */
+    }
+    .articul{
+        font-size: 16px;   /*  20-4  */
+    }
+    .number{
+        font-size: 16px;   /*  20-4  */
+    }
+    .content{
+        margin-bottom: 12px;   /*  15-3  */
+    }
+    .Phone_name{
+        font-size: 58px;  /*  70-12   */
+        padding-bottom: 12px;  /*  15-3  */
+    }
+    .skidka{
+        top: -8%;              /*  10-2  */
+        left: 4%;             /*  5-1  */
+        font-size: 24px;      /*  30-6  */
+        width: 112px;       /*  140-28  */
+        height: 112px;       /*  140-28  */
+    }
+    .characteristics{
+        font-size: 16px;   /*  20-4  */
+    }
+    .harater{
+        font-size: 40px;           /*  50-10  */
+        padding-bottom: 4px;     /*   5-1  */
+    }
+    .display{
+        margin: 3% 8% 3% 8%;  /*  3  10-2  3  10-2  */
+        font-size: 29px;        /*  35-6  */
+        padding-top: 8px;       /*  10-2  */
+    }
+
+    li{
+        font-size: 20px;        /*  25-5  */
+    }
+
+    .opis_short {
+        margin: 1% 4%;      /*  1  5-1  */
+        font-size: 24px;        /*  30-6  */
+        padding-bottom: 8px;        /*  10-2  */
+    }
+    .opis{
+        margin: 1% 4%;      /*  1   5-1  */
+        font-size: 16px;         /*  20-4  */
+        padding-top: 8px;       /*  10-2  */
+    }
+    .detalno{
+        margin: 1% 4%;      /*  1  5-1  */
+        font-size: 16px;        /*  20-4  */
+        padding-bottom: 4px;        /*  5-1  */
+    }
+    .img_1:hover {
+        transform: translate(80px, -200px) scale(3);        /*  100-20   250-50  */
+    }
+    .img_2:hover {
+        transform: translate( 0, -200px) scale(3);      /*  250-50  */
+    }
+    .img_3:hover {
+        transform: translate(0, -200px) scale(3);       /*  250-50  */
+    }
+    .img_4:hover {
+        transform: translate(-72px, -200px) scale(3);   /* 90-18  250-50  */
+    }
 }
+
+@media screen and (max-width: 830px){
+    body{
+        width: 600px;     /*  1000-200-200  */
+    }
+    .card_product {
+        font-size: 12px;   /*  20-4-4  */
+    }
+    .articul{
+        font-size: 12px;   /*  20-4-4  */
+    }
+    .number{
+        font-size: 12px;   /*  20-4-4  */
+    }
+    .content{
+        margin-bottom: 9px;   /*  15-3-3  */
+    }
+    .Phone_name{
+        font-size: 46px;  /*  70-12-12   */
+        padding-bottom: 9px;  /*  15-3-3  */
+    }
+    .skidka{
+        top: -6%;              /*  10-2-2  */
+        left: 3%;             /*  5-1-1  */
+        font-size: 18px;      /*  30-6-6  */
+        width: 84px;       /*  140-28-28  */
+        height: 84px;       /*  140-28-28  */
+    }
+    .characteristics{
+        font-size: 12px;   /*  20-4-4  */
+    }
+    .harater{
+        font-size: 30px;           /*  50-10-10  */
+        padding-bottom: 3px;     /*   5-1-1  */
+    }
+    .display{
+        margin: 2% 6% 2% 6%;  /*  3-1  10-2-2  3-1  10-2-2  */
+        font-size: 23px;        /*  35-6-6  */
+        padding-top: 6px;       /*  10-2-2  */
+    }
+
+    li{
+        font-size: 15px;        /*  25-5-5  */
+    }
+
+    .opis_short {
+        margin: 1% 3%;      /*  1  5-1-1  */
+        font-size: 18px;        /*  30-6-6  */
+        padding-bottom: 6px;        /*  10-2-2  */
+    }
+    .opis{
+        margin: 1% 3%;      /*  1   5-1-1  */
+        font-size: 12px;         /*  20-4-4  */
+        padding-top: 6px;       /*  10-2-2  */
+    }
+    .detalno{
+        margin: 1% 3%;      /*  1  5-1-1  */
+        font-size: 12px;        /*  20-4-4  */
+        padding-bottom: 3px;        /*  5-1-1  */
+    }
+    .img_1:hover {
+        transform: translate(60px, -150px) scale(3);        /*  100-20-20   250-50-50  */
+    }
+    .img_2:hover {
+        transform: translate( 0, -150px) scale(3);      /*  250-50-50  */
+    }
+    .img_3:hover {
+        transform: translate(0, -150px) scale(3);       /*  250-50-50  */
+    }
+    .img_4:hover {
+        transform: translate(-54px, -150px) scale(3);   /* 90-18-18  250-50-50  */
+    }
+    @media screen and (max-width: 615px){
+        body{
+            width: 400px;     /*  1000-200-200-200  */
+        }
+        .card_product {
+            font-size: 8px;   /*  20-4-4-4  */
+        }
+        .articul{
+            font-size: 8px;   /*  20-4-4-4  */
+        }
+        .number{
+            font-size: 8px;   /*  20-4-4-4  */
+        }
+        .content{
+            margin-bottom: 6px;   /*  15-3-3-3  */
+        }
+        .Phone_name{
+            font-size: 34px;  /*  70-12-12-12   */
+            padding-bottom: 6px;  /*  15-3-3-3  */
+        }
+        .skidka{
+            top: -4%;              /*  10-2-2-2  */
+            left: 2%;             /*  5-1-1-1  */
+            font-size: 12px;      /*  30-6-6-6  */
+            width: 56px;       /*  140-28-28-28  */
+            height: 56px;       /*  140-28-28-28  */
+        }
+        .characteristics{
+            font-size: 8px;   /*  20-4-4-4  */
+        }
+        .harater{
+            font-size: 20px;           /*  50-10-10-10  */
+            padding-bottom: 2px;     /*   5-1-1-1  */
+        }
+        .display{
+            margin: 2% 4% 2% 4%;  /*  3-1  10-2-2-2  3-1  10-2-2-2  */
+            font-size: 17px;        /*  35-6-6-6  */
+            padding-top: 4px;       /*  10-2-2-2  */
+        }
+        li{
+            font-size: 10px;        /*  25-5-5-5  */
+        }
+
+        .opis_short {
+            margin: 1% 2%;      /*  1  5-1-1-1  */
+            font-size: 12px;        /*  30-6-6-6  */
+            padding-bottom: 4px;        /*  10-2-2-2  */
+        }
+        .opis{
+            margin: 1% 2%;      /*  1   5-1-1-1  */
+            font-size: 8px;         /*  20-4-4-4  */
+            padding-top: 4px;       /*  10-2-2-2  */
+        }
+        .detalno{
+            margin: 1% 2%;      /*  1  5-1-1-1  */
+            font-size: 8px;        /*  20-4-4-4  */
+            padding-bottom: 2px;        /*  5-1-1-1  */
+        }
+        .img_1:hover {
+            transform: translate(40px, -100px) scale(3);        /*  100-20-20-20   250-50-50-50  */
+        }
+        .img_2:hover {
+            transform: translate( 0, -100px) scale(3);      /*  250-50-50-50  */
+        }
+        .img_3:hover {
+            transform: translate(0, -100px) scale(3);       /*  250-50-50-50  */
+        }
+        .img_4:hover {
+            transform: translate(-36px, -100px) scale(3);   /* 90-18-18-18  250-50-50-50  */
+        }
+        @media screen and (max-width: 415px){
+            body{
+                width: 200px;     /*  1000-200-200-200-20  */
+            }
+            .card_product {
+                font-size: 4px;   /*  20-4-4-4-4  */
+            }
+            .articul{
+                font-size: 4px;   /*  20-4-4-4-4  */
+            }
+            .number{
+                font-size: 4px;   /*  20-4-4-4-4  */
+            }
+            .content{
+                margin-bottom: 3px;   /*  15-3-3-3-3  */
+            }
+            .Phone_name{
+                font-size: 22px;  /*  70-12-12-12-12   */
+                padding-bottom: 3px;  /*  15-3-3-3-3  */
+            }
+            .skidka{
+                top: -2%;              /*  10-2-2-2-2  */
+                left: 1%;             /*  5-1-1-1-1  */
+                font-size: 6px;      /*  30-6-6-6-6  */
+                width: 28px;       /*  140-28-28-28-28  */
+                height: 28px;       /*  140-28-28-28-28  */
+            }
+            .characteristics{
+                font-size: 4px;   /*  20-4-4-4-4  */
+            }
+            .harater{
+                font-size: 10px;           /*  50-10-10-10-10  */
+                padding-bottom: 1px;     /*   5-1-1-1-1  */
+            }
+            .display{
+                margin: 1% 2% 1% 2%;  /*  3-1-1  10-2-2-2-2  3-1-1  10-2-2-2-2  */
+                font-size: 11px;        /*  35-6-6-6-6  */
+                padding-top: 2px;       /*  10-2-2-2-2  */
+            }
+            li{
+                font-size: 5px;        /*  25-5-5-5-5  */
+            }
+
+            .opis_short {
+                margin: .5% 1%;      /*  1-0.5  5-1-1-1-1  */
+                font-size: 6px;        /*  30-6-6-6-6  */
+                padding-bottom: 2px;        /*  10-2-2-2-2  */
+            }
+            .opis{
+                margin: .5% 1%;      /*  1-0.5   5-1-1-1-1  */
+                font-size: 4px;         /*  20-4-4-4-4  */
+                padding-top: 2px;       /*  10-2-2-2-2  */
+            }
+            .detalno{
+                margin: .5% 1%;      /*  1-0.5  5-1-1-1-1  */
+                font-size: 4px;        /*  20-4-4-4-4  */
+                padding-bottom: 1px;        /*  5-1-1-1-1  */
+            }
+            .img_1:hover {
+                transform: translate(20px, -50px) scale(3);        /*  100-20-20-20-20   250-50-50-50-50  */
+            }
+            .img_2:hover {
+                transform: translate( 0, -50px) scale(3);      /*  250-50-50-50-50  */
+            }
+            .img_3:hover {
+                transform: translate(0, -50px) scale(3);       /*  250-50-50-50-50  */
+            }
+            .img_4:hover {
+                transform: translate(-18px, -50px) scale(3);   /* 90-18-18-18-18  250-50-50-50-50  */
+            }
+        }}}
 
 /*.flexBox{*/
     /*width: 1000px;*/
