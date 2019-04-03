@@ -1,0 +1,232 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 3% auto;
+    max-width: 70%;
+    min-width: 320px;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 2.5vw;
+    width: 100%;
+}
+.freespace{
+    flex-grow: 20;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.card_product {
+    display: flex;
+    color: gray;
+    justify-content: left;
+    font-size: 2vw;
+    flex-grow: 1;
+}
+.articul{
+    display: flex;
+    font-size: 2vw;
+    color: gray;
+    flex-grow: 1;
+    justify-content: right;
+}
+.number{
+    display: flex;
+    justify-content: center;
+    font-size: 2vw;
+    font-weight: bold;
+    margin: 0 0 0 2px;
+    flex-grow: 1;
+}
+.content{
+    border: 1px solid black;
+    margin-bottom: 15px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.19), 0 10px 10px rgba(0,0,0,0.23);
+    width: 100%;
+}
+.Phone_name{
+    text-align: center;
+    font-size: 6vw;
+    font-weight: bold;
+    border-bottom: 3px solid rgba(0, 0, 255, 0.51);
+    color: rgba(0, 0, 255, 0.51);
+    /*margin: 10px 5% 0 5%;*/
+    padding-bottom: 15px;
+    width: 100%;
+}
+.photos {
+    display: flex;
+    flex-direction: column;
+    /*margin: 2%;*/
+    width: 50%;
+}
+.big_photo{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    /*height: auto;*/
+    position: relative;
+    box-sizing: border-box;
+}
+.big_photo img{
+    position: relative;
+}
+.skidka{
+    border-radius: 50%;
+    position: absolute;
+    top: -7%;
+    left: 5%;
+    background: rgba(255, 0, 0, 0.5);
+    color: #ffffff;
+    font-size: 3vw;
+    width: 15vw;
+    height: 15vw;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    z-index: 1;
+    box-sizing: border-box;
+}
+.small_photo {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: auto;
+    margin: 1% 5%;
+}
+.small_photo img{
+    width: 20%;
+    height: 70%;
+    transition: all .5s;
+}
+.characteristics{
+    width: 46%;
+    margin: 2%;
+    font-size: 3vw;
+}
+.main{
+    display: flex;
+}
+.harater{
+    text-align: center;
+    font-size: 4vw;
+    font-weight: bold;
+    opacity: .5;
+    padding-bottom: 5px;
+    border-bottom: 1px solid gray;
+    width: 100%;
+}
+li{
+    list-style: none;
+    font-size: 2vw;
+}
+.display{
+    margin: 3% 10% 3% 10%;
+    display: flex;
+    flex-direction: column;
+    font-size: 3vw;
+    text-decoration: underline;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.opis{
+    margin: 1% 5%;
+    font-size: 2vw;
+    font-weight: bold;
+    padding-top: 10px;
+    width: 90%;
+}
+.detalno{
+    margin: 1% 5%;
+    font-size: 2vw;
+    padding-bottom: 5px;
+}
+.opis_short {
+    margin: 1% 5%;
+    font-size: 3vw;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    width: 90%;
+}
+.img_1:hover {
+    transform: translate(8vw, -24vw) scale(4);
+    transition: all .5s;
+}
+.img_1:hover + .big_photo img {
+    background: white;
+    z-index: 1;
+}
+.img_2:hover {
+    transform: translate( 0vw, -24vw) scale(4);
+    transition: all .5s;
+}
+.img_3:hover {
+    transform: translate(-8vw, -24vw) scale(4);
+    transition: all .5s;
+}
+.img_4:hover {
+    transform: translate(-15vw, -24vw) scale(4);
+    transition: all .5s;
+
+}
+.skidka:hover{
+    transform:  rotate(720deg);
+    transition: all 1s;
+}
+p{
+
+}
+
+/*.flexBox{*/
+    /*width: 1000px;*/
+    /*height: 500px;*/
+    /*border: 2px solid red;*/
+    /*margin: 0 auto;*/
+    /*display: flex;*/
+    /*align-items: center;  !*flex-start;  flex-end*!*/
+    /*justify-content: center; !*space-between;  end;  flex-start;  flex-end*!*/
+/*}*/
+/*.flexBox-item {*/
+    /*background: grey;*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+    /*border: 2px solid green;*/
+    /*margin: 10px;*/
+    /*justify-content: center;*/
+/*}*/
+/*.positionBox {*/
+    /*width: 1000px;*/
+    /*height: 500px;*/
+    /*border: 2px solid blue;*/
+/*}*/
+
+/*.positionBox-item {*/
+    /*margin: 10px;*/
+    /*background: blanchedalmond;*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+    /*border: 2px solid magenta;*/
+    /*!*font-family: Arial, SansSerif;*!*/
+/*}*/
+/*.posRelativ {*/
+    /*position: relative;*/
+    /*background: gold;*/
+    /*top: 100px;*/
+    /*left: 200px;*/
+/*}*/
+/*.posFixed {*/
+    /*background: red;*/
+    /*position: fixed;*/
+/*}*/
+/*.posAbsolute {*/
+    /*position: absolute; !*используется вместе с position: relative, то есть внутри него *!*/
+    /*background: aqua;*/
+    /*left: 300px;
+}*/
+
+/*justify-content: center; выравнивание по центру в родительском блоке*/
+/*justify-content: space-between;  растянуть внутри блока на равное расстояние*/
+/*justify-content: end;*/
