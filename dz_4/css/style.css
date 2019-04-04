@@ -117,12 +117,13 @@ img {
     font-weight: bold;
     padding-top: 10px;
 }
-
-li{
+ul{
+    padding: 0 0 0 20px;
+}
+li {
     list-style: none;
     font-size: 25px;
 }
-
 .opis_short {
     margin: 1% 5%;
     font-size: 30px;
@@ -331,11 +332,11 @@ li{
             padding-bottom: 6px;  /*  15-3-3-3  */
         }
         .skidka{
-            top: -4%;              /*  10-2-2-2  */
+            top: -10%;              /*  10-2-2-2  */
             left: 2%;             /*  5-1-1-1  */
-            font-size: 12px;      /*  30-6-6-6  */
-            width: 56px;       /*  140-28-28-28  */
-            height: 56px;       /*  140-28-28-28  */
+            font-size: 15px;      /*  30-6-6-6  */
+            width: 70px;       /*  140-28-28-28  */
+            height: 70px;       /*  140-28-28-28  */
         }
         .characteristics{
             font-size: 8px;   /*  20-4-4-4  */
@@ -350,23 +351,23 @@ li{
             padding-top: 4px;       /*  10-2-2-2  */
         }
         li{
-            font-size: 10px;        /*  25-5-5-5  */
+            font-size: 14px;        /*  25-5-5-1  */
         }
 
         .opis_short {
             margin: 1% 2%;      /*  1  5-1-1-1  */
-            font-size: 12px;        /*  30-6-6-6  */
-            padding-bottom: 4px;        /*  10-2-2-2  */
+            font-size: 15px;        /*  30-6-6-3  */
+            padding-bottom: 5px;        /*  10-2-2-1  */
         }
         .opis{
             margin: 1% 2%;      /*  1   5-1-1-1  */
-            font-size: 8px;         /*  20-4-4-4  */
-            padding-top: 4px;       /*  10-2-2-2  */
+            font-size: 12px;         /*  20-4-4-2  */
+            padding-top: 5px;       /*  10-2-2-1  */
         }
         .detalno{
             margin: 1% 2%;      /*  1  5-1-1-1  */
-            font-size: 8px;        /*  20-4-4-4  */
-            padding-bottom: 2px;        /*  5-1-1-1  */
+            font-size: 12px;        /*  20-4-4-2  */
+            padding-bottom: 3px;        /*  5-1-1  */
         }
         .img_1:hover {
             transform: translate(40px, -100px) scale(3);        /*  100-20-20-20   250-50-50-50  */
@@ -380,77 +381,175 @@ li{
         .img_4:hover {
             transform: translate(-36px, -100px) scale(3);   /* 90-18-18-18  250-50-50-50  */
         }
-        @media screen and (max-width: 500px){
-            body{
-                width: 200px;     /*  1000-200-200-200-20  */
+        /*@media screen and (max-width: 500px){*/
+            /*body{*/
+                /*width: 200px;     !*  1000-200-200-200-20  *!*/
+            /*}*/
+            /*.card_product {*/
+                /*font-size: 4px;   !*  20-4-4-4-4  *!*/
+            /*}*/
+            /*.articul{*/
+                /*font-size: 4px;   !*  20-4-4-4-4  *!*/
+            /*}*/
+            /*.number{*/
+                /*font-size: 4px;   !*  20-4-4-4-4  *!*/
+            /*}*/
+            /*.content{*/
+                /*margin-bottom: 3px;   !*  15-3-3-3-3  *!*/
+            /*}*/
+            /*.Phone_name{*/
+                /*font-size: 22px;  !*  70-12-12-12-12   *!*/
+                /*padding-bottom: 3px;  !*  15-3-3-3-3  *!*/
+            /*}*/
+            /*.skidka{*/
+                /*top: -2%;              !*  10-2-2-2-2  *!*/
+                /*left: 1%;             !*  5-1-1-1-1  *!*/
+                /*font-size: 6px;      !*  30-6-6-6-6  *!*/
+                /*width: 28px;       !*  140-28-28-28-28  *!*/
+                /*height: 28px;       !*  140-28-28-28-28  *!*/
+            /*}*/
+            /*.characteristics{*/
+                /*font-size: 4px;   !*  20-4-4-4-4  *!*/
+            /*}*/
+            /*.harater{*/
+                /*font-size: 10px;           !*  50-10-10-10-10  *!*/
+                /*padding-bottom: 1px;     !*   5-1-1-1-1  *!*/
+            /*}*/
+            /*.display{*/
+                /*margin: 1% 2% 1% 2%;  !*  3-1-1  10-2-2-2-2  3-1-1  10-2-2-2-2  *!*/
+                /*font-size: 11px;        !*  35-6-6-6-6  *!*/
+                /*padding-top: 2px;       !*  10-2-2-2-2  *!*/
+            /*}*/
+            /*li{*/
+                /*font-size: 5px;        !*  25-5-5-5-5  *!*/
+            /*}*/
+
+            /*.opis_short {*/
+                /*margin: .5% 1%;      !*  1-0.5  5-1-1-1-1  *!*/
+                /*font-size: 6px;        !*  30-6-6-6-6  *!*/
+                /*padding-bottom: 2px;        !*  10-2-2-2-2  *!*/
+            /*}*/
+            /*.opis{*/
+                /*margin: .5% 1%;      !*  1-0.5   5-1-1-1-1  *!*/
+                /*font-size: 4px;         !*  20-4-4-4-4  *!*/
+                /*padding-top: 2px;       !*  10-2-2-2-2  *!*/
+            /*}*/
+            /*.detalno{*/
+                /*margin: .5% 1%;      !*  1-0.5  5-1-1-1-1  *!*/
+                /*font-size: 4px;        !*  20-4-4-4-4  *!*/
+                /*padding-bottom: 1px;        !*  5-1-1-1-1  *!*/
+            /*}*/
+            /*.img_1:hover {*/
+                /*transform: translate(20px, -50px) scale(3);        !*  100-20-20-20-20   250-50-50-50-50  *!*/
+            /*}*/
+            /*.img_2:hover {*/
+                /*transform: translate( 0, -50px) scale(3);      !*  250-50-50-50-50  *!*/
+            /*}*/
+            /*.img_3:hover {*/
+                /*transform: translate(0, -50px) scale(3);       !*  250-50-50-50-50  *!*/
+            /*}*/
+            /*.img_4:hover {*/
+                /*transform: translate(-18px, -50px) scale(3);   !* 90-18-18-18-18  250-50-50-50-50  *!*/
+            /*}*/
+        /*}*/
+
+        @media screen and (max-width: 450px) {
+            body {
+                width: 290px; /*  1000-200-200-200  */
             }
+
             .card_product {
-                font-size: 4px;   /*  20-4-4-4-4  */
+                font-size: 10px; /*  20-4-4-2  */
             }
-            .articul{
-                font-size: 4px;   /*  20-4-4-4-4  */
+
+            .articul {
+                font-size: 10px; /*  20-4-4-2  */
             }
-            .number{
-                font-size: 4px;   /*  20-4-4-4-4  */
+
+            .number {
+                font-size: 10px; /*  20-4-4-2  */
             }
-            .content{
-                margin-bottom: 3px;   /*  15-3-3-3-3  */
+
+            .content {
+                margin-bottom: 9px; /*  15-3-3  */
             }
-            .Phone_name{
-                font-size: 22px;  /*  70-12-12-12-12   */
-                padding-bottom: 3px;  /*  15-3-3-3-3  */
+
+            .Phone_name {
+                font-size: 34px; /*  70-12-12-12   */
+                padding-bottom: 6px; /*  15-3-3-3  */
             }
-            .skidka{
-                top: -2%;              /*  10-2-2-2-2  */
-                left: 1%;             /*  5-1-1-1-1  */
-                font-size: 6px;      /*  30-6-6-6-6  */
-                width: 28px;       /*  140-28-28-28-28  */
-                height: 28px;       /*  140-28-28-28-28  */
+            .photos {
+                width: 90%;}
+            .skidka {
+                top: -6%; /*  10-2-2-2  */
+                left: 2%; /*  5-1-1-1  */
+                font-size: 18px; /*  30-6-6  */
+                width: 84px; /*  140-28-28  */
+                height: 84px; /*  140-28-28  */
             }
-            .characteristics{
-                font-size: 4px;   /*  20-4-4-4-4  */
+
+            .main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
             }
-            .harater{
-                font-size: 10px;           /*  50-10-10-10-10  */
-                padding-bottom: 1px;     /*   5-1-1-1-1  */
+            .characteristics {
+                font-size: 12px; /*  20-4-4  */
+                width: auto;
             }
-            .display{
-                margin: 1% 2% 1% 2%;  /*  3-1-1  10-2-2-2-2  3-1-1  10-2-2-2-2  */
-                font-size: 11px;        /*  35-6-6-6-6  */
-                padding-top: 2px;       /*  10-2-2-2-2  */
+
+            .harater {
+                font-size: 20px; /*  50-10-10-10  */
+                padding-bottom: 3px; /*   5-1-1  */
             }
-            li{
-                font-size: 5px;        /*  25-5-5-5-5  */
+
+            .display {
+                margin: 2% 6% 2% 6%; /*  3-1  10-2-2  3-1  10-2-2  */
+                font-size: 18px; /*  35-6-6-5  */
+                padding-top: 6px; /*  10-2-2  */
+            }
+
+            li {
+                font-size: 13px; /*  25-5-5-2  */
             }
 
             .opis_short {
-                margin: .5% 1%;      /*  1-0.5  5-1-1-1-1  */
-                font-size: 6px;        /*  30-6-6-6-6  */
-                padding-bottom: 2px;        /*  10-2-2-2-2  */
+                margin: 1% 2%; /*  1  5-1-1-1  */
+                font-size: 18px; /*  30-6-6  */
+                padding-bottom: 4px; /*  10-2-2-2  */
             }
-            .opis{
-                margin: .5% 1%;      /*  1-0.5   5-1-1-1-1  */
-                font-size: 4px;         /*  20-4-4-4-4  */
-                padding-top: 2px;       /*  10-2-2-2-2  */
+
+            .opis {
+                margin: 1% 2%; /*  1   5-1-1-1  */
+                font-size: 10px; /*  20-4-4-2  */
+                padding-top: 4px; /*  10-2-2-2  */
             }
-            .detalno{
-                margin: .5% 1%;      /*  1-0.5  5-1-1-1-1  */
-                font-size: 4px;        /*  20-4-4-4-4  */
-                padding-bottom: 1px;        /*  5-1-1-1-1  */
+
+            .detalno {
+                margin: 1% 2%; /*  1  5-1-1-1  */
+                font-size: 10px; /*  20-4-4-2  */
+                padding-bottom: 2px; /*  5-1-1-1  */
             }
+
             .img_1:hover {
-                transform: translate(20px, -50px) scale(3);        /*  100-20-20-20-20   250-50-50-50-50  */
+                transform: translate(60px, -150px) scale(3); /*  100-20-20-20   250-50-50-50  */
             }
+
             .img_2:hover {
-                transform: translate( 0, -50px) scale(3);      /*  250-50-50-50-50  */
+                transform: translate(0, -150px) scale(3); /*  250-50-50-50  */
             }
+
             .img_3:hover {
-                transform: translate(0, -50px) scale(3);       /*  250-50-50-50-50  */
+                transform: translate(0, -150px) scale(3); /*  250-50-50-50  */
             }
+
             .img_4:hover {
-                transform: translate(-18px, -50px) scale(3);   /* 90-18-18-18-18  250-50-50-50-50  */
+                transform: translate(-54px, -150px) scale(3); /* 90-18-18-18  250-50-50-50  */
             }
-        }}}
+        }
+    }
+}
 
 /*.flexBox{*/
     /*width: 1000px;*/
