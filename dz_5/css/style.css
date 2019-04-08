@@ -53,6 +53,9 @@ header{
     text-transform: uppercase;
     font-size: 13px;
 }
+.menu a:hover{
+color: #1a9c9e
+}
 .header__main {
 
 }
@@ -79,20 +82,23 @@ header{
     width: 780px;
 }
 .button {
-    /*background: #fed136;*/
     border: 2px solid #1a9c9e;
     color: #1a9c9e;
     border-radius: 3px;
     display: block;
     width: 120px;
     padding: 15px 0;
-    margin: 0 auto;
+    margin: 50px auto 0 auto;
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 16px;
-    margin-top: 50px;
+}
+.button:hover{
+    color: white;
+    background: #1a9c9e;
+}
 .header__dotNav {
 
 }
