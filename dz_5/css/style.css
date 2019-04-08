@@ -80,7 +80,7 @@ color: #00e0d0
     width: 780px;
 }
 .button {
-    border: 2px solid #1a9c9e;
+    border: 2px solid #00e0d0;
     color: #00e0d0;
     border-radius: 3px;
     display: block;
@@ -98,5 +98,19 @@ color: #00e0d0
     background: #00e0d0;
 }
 .header__dotNav {
+    display: flex;
+    justify-content: center;
+    margin: 125px auto 0 auto;
 
+}
+.header__dotNav a{
+    border: 2px solid #00e0d0;
+    width: 8px;
+    height: 8px;
+    margin: 0 2px;
+    border-radius: 50%;
+}
+.header__dotNav a:hover{
+    background: #00e0d0;
+    cursor: pointer;
 }
