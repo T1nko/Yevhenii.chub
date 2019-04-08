@@ -104,13 +104,14 @@ color: #00e0d0
 
 }
 .header__dotNav a{
-    border: 2px solid #00e0d0;
+    border: 2px solid #fff;
     width: 8px;
     height: 8px;
     margin: 0 2px;
     border-radius: 50%;
 }
 .header__dotNav a:hover{
+    border: 2px solid #00e0d0;
     background: #00e0d0;
     cursor: pointer;
 }
