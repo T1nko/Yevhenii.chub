@@ -54,7 +54,7 @@ header{
     font-size: 13px;
 }
 .menu a:hover{
-color: #1a9c9e
+color: #00e0d0
 }
 .header__main {
 
@@ -70,7 +70,7 @@ color: #1a9c9e
 }
 .separator{
     width: 50px;
-    border: 2px solid #1a9c9e;
+    border: 2px solid #00e0d0;
     margin: 25px auto 30px auto;
 }
 .secondTitle{
@@ -83,7 +83,7 @@ color: #1a9c9e
 }
 .button {
     border: 2px solid #1a9c9e;
-    color: #1a9c9e;
+    color: #00e0d0;
     border-radius: 3px;
     display: block;
     width: 120px;
@@ -97,7 +97,7 @@ color: #1a9c9e
 }
 .button:hover{
     color: white;
-    background: #1a9c9e;
+    background: #00e0d0;
 }
 .header__dotNav {
 
