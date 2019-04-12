@@ -184,18 +184,20 @@ ul,li {
     background: url(../img/bg_sectionAbout.png) no-repeat center top / cover;
     height: 650px;
 }
+.container-play{
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+
+}
 .play__items{
-    width: 160px;
-    height: 160px;
-    margin: 130px auto;
+    margin: auto;
     text-align: center;
-    top:50%;
-    bottom: 50%;
 }
 .playButton:hover{
     background: #00e0d0;
     border-radius: 50%;
-    opacity: 1;
+    opacity: 1 !important;
 }
 .watchOurStory{
     text-transform: uppercase;
