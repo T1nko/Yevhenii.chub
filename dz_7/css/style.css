@@ -774,7 +774,12 @@ ul, li {
 
 @media screen and (max-width: 652px) {
   .copyright {
-    justify-content: center; } }
+    justify-content: center; }
+  .copyright__left {
+    justify-content: center; }
+  .copyright__right {
+    margin-top: 20px;
+    text-align: center; } }
 
 @media screen and (max-width: 352px) {
   .titleCopyright {
