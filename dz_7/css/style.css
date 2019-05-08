@@ -573,6 +573,7 @@ ul, li {
 
 .copyright {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 65px; }
 
@@ -671,6 +672,72 @@ ul, li {
     margin: auto; } }
 
 @media screen and (max-width: 540px) {
+  .wrapper {
+    margin: 10px auto;
+    width: 200px;
+    background-color: #00e0d0;
+    position: relative;
+    color: white;
+    text-align: center;
+    height: 40px; }
+  #check-menu {
+    display: none; }
+  label {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+    line-height: 40px; }
+  .burger-line {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 35px;
+    height: 2px;
+    background-color: #fff;
+    transition: .5s all; }
+  .second, .third {
+    top: 18px; }
+  .fourth {
+    top: 28px; }
+  .main-menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    max-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    transition: .5s all; }
+  .main-menu a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #00e0d0;
+    background-color: #170e40; }
+  .main-menu a:hover {
+    background-color: #00e0d0; }
+  #check-menu:checked ~ .main-menu {
+    max-height: 500px;
+    font-size: 16px; }
+  #check-menu:checked ~ .first {
+    display: none; }
+  #check-menu:checked ~ .second {
+    transform: rotate(45deg); }
+  #check-menu:checked ~ .third {
+    transform: rotate(-45deg); }
+  #check-menu:checked ~ .fourth {
+    display: none; }
+  .mainHeaderNav {
+    display: none; }
   .mainHeader {
     flex-direction: column; }
   .mainHeaderNav {
@@ -697,6 +764,18 @@ ul, li {
   .button-mod__About {
     margin: auto; } }
 
+@media screen and (min-width: 540px) {
+  .wrapper {
+    display: none; } }
+
 @media screen and (max-width: 400px) {
   .sliderDotted__item {
     margin: auto 2px; } }
+
+@media screen and (max-width: 652px) {
+  .copyright {
+    justify-content: center; } }
+
+@media screen and (max-width: 352px) {
+  .titleCopyright {
+    padding-right: 5px; } }
