@@ -18,16 +18,16 @@
 </head>
 
 <body>
-   <h1><a name="содерж">Зміст</a></h1>
+   <h1 id="top"><a name="содерж">Зміст</a></h1>
    <!-- todo  -->
-   <p>The HTML Section Heading elements</p>
-   <p>Example page</p>
-   <p>Navigation</p>
+   <p><a href="#section_heading">The HTML Section Heading elements</a></p>
+   <p><a href="#example">Example page</a></p>
+   <p><a href="#nav">Navigation</a></p>
 
    <hr>
    <!-- The HTML Section Heading elements  -->
    <section>
-      <h2>The HTML Section Heading elements</h2>
+      <h2 id="section_heading">The HTML Section Heading elements</h2>
 
       <p>The &laquo;h1&raquo; to &laquo;h6&laquo; HTML elements represent six levels of section headings.
          &laquo;h1&raquo; is the highest section level and &laquo;h6&raquo; is the lowest.</p>
@@ -70,7 +70,7 @@
 
    <!--  Example page  -->
    <section>
-      <h2>Example page</h2>
+      <h2 id="example">Example page</h2>
       <p>The following code shows a few headings with some content under them.</p>
       <pre class="brush: html notranslate">
 <code>
@@ -99,7 +99,7 @@
    <!-- Navigation -->
 
    <section>
-      <h2>Navigation</h2>
+      <h2 id="nav">Navigation</h2>
       <p>A common navigation technique for users of screen reading software is jumping from heading to quickly determine
          the
          content of the page. Because of this, it is important to not skip one or more heading levels. Doing so may
@@ -163,9 +163,9 @@
       </ol>
    </section>
 
-   <p>Link for this document is <a
-         href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements#example_page">The HTML Section
+   <p>Link for this document is <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements#example_page">The HTML Section
          Heading elements</a></p>
+         <p><a href="#top">Back to top</a></p>
 </body>
 
 </html>
