@@ -4,16 +4,21 @@
     <title>Selector of attributes</title>
     <meta charset="utf-8" />
     <style>
-      p[title] {
+      [title] {
         color: green;
       }
-      p[class] {
+     
+      [class] {
+        color: red;
+    
+      }
+      [title="третій"] {
         color: red;
       }
-      p[title="третій"] {
-        color: red;
+      [title="перший"] {
+        color: green;
       }
-      p[title="перший"] {
+      [title~="перший"] {
         color: green;
       }
     </style>
