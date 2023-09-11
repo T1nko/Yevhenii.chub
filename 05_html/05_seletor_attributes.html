@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Selector of attributes</title>
-        <meta charset="utf-8">
-<style>
-
-</style>
-</head>
-<body>
-<!-- Селектори атрибутів ========================================
+  <head>
+    <title>Selector of attributes</title>
+    <meta charset="utf-8" />
+    <style>
+      p[title] {
+        color: green;
+      }
+      p[class] {
+        color: red;
+      }
+      p[title="третій"] {
+        color: red;
+      }
+      p[title="перший"] {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Селектори атрибутів ========================================
 Завдання:
  - зробити текст елементів, у яких є атрибут title зеленим
  - зробити текст елементів, у яких є атрибут class червоним
@@ -20,15 +31,22 @@
  - зробити текст елементів у яких є класи "one" та "two" зеленим
 -->
 
-  
-<p title="перший" class="one">Paragraph   <b>with attribute  title="перший"</b></p>
-<p title="перший другий" class="two">Paragraph <b>with attribute  title="перший другий"</b></p>
-<p title="третій" class="three">Paragraph <b>with attribute title="третій"</b></p>
-<p class="one">Paragraph <b>with class="one"</b></p>
-<p class="one two">Paragraph <b>with class="two three"</b></p>
-<p class="three lighten">Paragraph <b>with class="content main lighten"</b></p>
+    <p title="перший" class="one">
+      Paragraph <b>with attribute title="перший"</b>
+    </p>
+    <p title="перший другий" class="two">
+      Paragraph <b>with attribute title="перший другий"</b>
+    </p>
+    <p title="третій" class="three">
+      Paragraph <b>with attribute title="третій"</b>
+    </p>
+    <p class="one">Paragraph <b>with class="one"</b></p>
+    <p class="one two">Paragraph <b>with class="two three"</b></p>
+    <p class="three lighten">
+      Paragraph <b>with class="content main lighten"</b>
+    </p>
 
-<!-- 
+    <!-- 
 <form action="">
 	<div>
 	    <label>Login</label><br>
@@ -43,8 +61,5 @@
 	</div>
 </form>
 -->
-
-
-
-</body>
+  </body>
 </html>
