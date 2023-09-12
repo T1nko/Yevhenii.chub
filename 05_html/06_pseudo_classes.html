@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Pseudo classes</title>
-    <meta charset="utf-8" />
-    <style>
-      /* todo */
-    </style>
-    <style>
-      a {
-        color: green;
-      }
-      a:visited {
-        color: red;
-      }
-      a:active {
-        color: #65c;
-      }
-      .myclass {
-        color: blue;
-      }
-      a:hover {
-        text-decoration: none;
-      }
-    </style>
-  </head>
-  <body>
-    <!--    
+
+<head>
+  <title>Pseudo classes</title>
+  <meta charset="utf-8" />
+  <style>
+    [href^='http://']:visited {
+      color: tomato;
+    }
+
+    [href]:active {
+      color: yellow;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      font-style: italic;
+    }
+  </style>
+  <style></style>
+</head>
+
+<body>
+  <!--    
 Завдання:
  - відобразити усі посилання зеленим кольором color:green;
  - Відобразити відвідувані посилання червоним кольором color: red;
@@ -37,12 +38,14 @@
 - зробити фон поля введення тексту input кольором #ffc при отриманні фокусу
  - перший дочірній елемент списку UL c id="u1" відобразити червоним кольором
  -->
-    <div class="menu">
-      <div><a href="http://google.com">Google.com</a></div>
-      <div><a href="http://yahoo.com">Yahoo.com</a></div>
-      <div><a href="http://design-class.com.ua">Design class</a></div>
-      <div><a href="http://ukr.net">ukr.net</a></div>
-      <div><a class="myclass" href="http://reactjs.org">React</a></div>
-    </div>
-  </body>
+  <div class="menu">
+    <div><a class="google-link" href="http://google.com">Google.com</a></div>
+    <div><a href="http://yahoo.com">Yahoo.com</a></div>
+    <div><a href="http://design-class.com.ua">Design class</a></div>
+    <div><a href="http://ukr.net">ukr.net</a></div>
+    <div><a class="myclass" href="http://reactjs.org">React</a></div>
+    <div><a class="myclass" href="empty.html">React</a></div>
+  </div>
+</body>
+
 </html>

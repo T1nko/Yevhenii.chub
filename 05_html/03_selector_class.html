@@ -1,51 +1,61 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Селектори классів</title>
-    <meta charset="utf-8" />
-    <style>
-      .first{
-        font-size: 20px;
-        color: green;
-      }
-      .second{
-        font-size: 30px;
-        font-weight: bold;
-      }
-      .myHead{
-        font-size: 40px;
-        color: blue;
-      }
-    </style>
-  </head>
-  <body>
-    <!--   Селектори класів   ================================
+
+<head>
+  <title>Селектори классів</title>
+  <meta charset="utf-8" />
+  <style>
+    .first {
+      font-size: 20px;
+      color: red;
+      font-style: italic;
+    }
+
+    .title.first {
+      font-size: 30px;
+    }
+
+    .second {
+      font-size: 30px;
+      color: navy;
+    }
+
+    .myHead {
+      font-size: 40px;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <!--   Селектори класів   ================================
 Завдання:
   - Параграфи з class="first" відобразити розміром шрифту 20px зеленим кольором
   - Параграф з class="second" відобразити розміром шрифту 30px напівжирним зображенням
   - Заголовок з class="myHead" відобразити розміром шрифту 40px синього кольору-->
 
-    <h2>Header Н2 without class</h2>
-    <p class="first">Paragraph 1 with font-size 20px</p>
-    <p class="second">Paragraph 1 with font-size 30px</p>
-    <p>Paragraph without class</p>
-    <h2 class="myHead">Header H2 with class myHead</h2>
-    <p class="first">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    </p>
-    <p class="second">
-      Donec nec sapien massa, at rhoncus erat. Donec iaculis varius
-      sollicitudin.
-    </p>
-    <p>Paragraph without class</p>
-    <h2 class="myHead">Header H2 with class myHead</h2>
-    <p class="first">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    </p>
-    <p class="second">
-      Donec nec sapien massa, at rhoncus erat. Donec iaculis varius
-      sollicitudin.
-    </p>
-    <p>Paragraph without class</p>
-  </body>
+  <h2 class="first title">Header Н2 without class</h2>
+  <p class="first">Paragraph 1 with font-size 20px</p>
+  <p class="second">Paragraph 1 with font-size 30px</p>
+  <p>Paragraph without class</p>
+  <h2 class="myHead">Header H2 with class myHead</h2>
+  <p class="first">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </p>
+  <p class="second">
+    Donec nec sapien massa, at rhoncus erat. Donec iaculis varius
+    sollicitudin.
+  </p>
+  <p>Paragraph without class</p>
+  <h2 class="myHead">Header H2 with class myHead</h2>
+  <p class="first">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </p>
+  <p class="second">
+    Donec nec sapien massa, at rhoncus erat. Donec iaculis varius
+    sollicitudin.
+  </p>
+  <p>Paragraph without class</p>
+</body>
+
 </html>
