@@ -1,15 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-</head>
+    <style>
+      .content {
+        width: 800px;
+        margin: auto;
+      }
+      .simple-web {
+        background-color: #a62a2a;
+        text-align: center;
+      }
+      .text-color {
+        color: white;
+      }
+      .italic {
+        font-style: italic;
+      }
+      .bold {
+        font-weight: bold;
+      }
+      .blue {
+        color: blue;
+      }
+      .paragraph-1,
+      .paragraph-2 {
+        font-size: 18px;
+      }
+      table {
+        margin: auto;
+      }
+      td {
+        border: 2px solid black;
+        border-style: dashed;
+      }
+      .copyright {
+        text-align: center;
+        background: #000;
+      }
+    </style>
+  </head>
 
-<body>
-
-</body>
-
+  <body>
+    <div class="content">
+      <div class="simple-web">
+        <h1 class="text-color">My simple website</h1>
+      </div>
+      <div class="sunset">
+        <img src="img/sunset.jpg" alt="sunset" width="100%" />
+      </div>
+      <div class="paragraph-1">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur
+          <span class="italic">adipisicing elit.</span> Voluptas, ullam, nulla
+          minima sed eligendi assumenda dolorem atque,<span class="bold"
+            >ex alias rem architecto dolorum repellat dignissimos nesciunt
+          </span>
+          dicta magni praesentium ipsa! Exercitationem fuga sit accusantium
+          <span class="italic blue">facere</span>. In temporibus eius, illo
+          suscipit ratione dolores atque nulla sint earum similique repellendus
+          modi quidem explicabo!
+        </p>
+      </div>
+      <div class="table">
+        <table class="galery">
+          <tr>
+            <td>
+              <img src="img/car01.jpg" alt="car01" width="100%" />
+            </td>
+            <td>
+              <img src="img/car02.jpg" alt="car02" width="100%" />
+            </td>
+            <td>
+              <img src="img/car03.jpg" alt="car03" width="100%" />
+            </td>
+            <td>
+              <img src="img/car04.jpg" alt="car04" width="100%" />
+            </td>
+            <td>
+              <img src="img/car05.jpg" alt="car05" width="100%" />
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="paragraph-2">
+        <p>
+          <span class="blue">Lorem ipsum</span> dolor sit amet consectetur
+          adipisicing elit. Aliquid magnam nemo odit inventore dolores ducimus
+          facilis eius, adipisci odio, molestias vero dignissimos incidunt.
+          Sapiente, perspiciatis labore. Provident, tenetur earum pariatur
+          officia voluptas libero ratione quibusdam.
+        </p>
+      </div>
+      <div class="copyright">
+        <h2 class="text-color">&copy Copyright</h2>
+      </div>
+    </div>
+  </body>
 </html>
