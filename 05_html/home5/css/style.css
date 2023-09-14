@@ -24,3 +24,37 @@ li:hover {
 }
 
 /* =============== todo =================*/
+h2{
+  text-align: center;
+}
+h2:hover{
+  color: red;
+}
+a{
+  color: black;
+  line-height: 30px;
+}
+.link:hover::after{
+  content: "\25BA";
+  color: red;
+}
+.next:hover{
+  color: green;
+  text-decoration: none;
+}
+.remix:hover{
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+.gallery{
+  width: 100%;
+  text-align: center;
+}
+img{
+  width: 49%;
+}
+li:hover>span{
+  color: red;
+}
+
