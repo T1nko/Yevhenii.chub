@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>vertical-align</title>
+		<meta charset="utf-8">
+<style type="text/css">
+</style>
+	</head>
+<body>
+
+
+<!-- 
+1.Присвоїти тексту в елементі span із класом class="sp" розмір
+   шрифту 2em
+   Видно, що рядки за умовчанням вирівнюються по базовій лінії,
+   що відповідає  правилу vertical-align: 0;
+   Тобто якщо вказати наприклад елемент span з класом class="sp"
+   свойство 
+      { vertical-align:20px;} 
+    відлік ведеться щодо базової лінії вгору.
+  
+   Також збільшується сумарна висота рядка
+   Якщо задавати властивість vertical-align у % то величина
+   розраховується від висоти лінії цього елемента 
+    (тобто властивості line-height;)
+  
+    Задайте
+    - параграфу з class="test" властивість {line-height:50px;} 
+    - елементу span з класом class="sp" { vertical-align:100%;}
+   Навести у браузері курсор мишки на текст у елементі span, 
+   натиснути праву кнопку  миші та вибрати пункт "Аналізувати елемент". 
+   Увімкнеться devtools Chrome і при цьому праворуч побачимо 
+   стилі для цього елемента.
+   Вибрати вкладку "Скомпільований стиль" і порівняти значення
+    line-height і vertical-align - вони будуть рівні.
+-->
+ 
+<p class="test">
+	Dolphins keep <span class="sp">one eye</span> open while sleeping.
+</p>
+
+<p class="phones-wrap">
+    <span class="code">04</span> 999-99-99
+</p>
+
+
+
+</body>
+
+
+
+</html>
