@@ -24,10 +24,10 @@ li:hover {
 }
 
 /* =============== todo =================*/
-h2{
+.h2{
   text-align: center;
 }
-h2:hover{
+.h2:hover{
   color: red;
 }
 a{
@@ -47,14 +47,9 @@ a{
   text-decoration: none;
   font-weight: bold;
 }
-.gallery{
-  width: 100%;
-  text-align: center;
-}
 img{
   width: 49%;
 }
 li:hover>span{
   color: red;
 }
-
