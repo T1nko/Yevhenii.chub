@@ -1,0 +1,30 @@
+ * {
+	margin:0; 
+	padding:0;
+	box-sizing: border-box;
+}
+
+.container {
+    background: lightgray;
+}
+
+.row {
+
+}
+
+.col {
+    background: lightskyblue;
+}
+
+.col-1{
+
+}
+.col-2{
+
+}
+.col-3{
+
+}
+.col-4{
+
+}
