@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Розміри шрифтів</title>
+    <meta charset="utf-8" />
+    <style type="text/css"></style>
+  </head>
+  <body>
+    <!--   
+Розмір шрифту за замовчцванням  = 16px
+Якщо встановити стиль *{font-size : 1.5em; }
+то вийде що розмір шрифту буде:
+    - для елемента HTML 16 x 1.5 = 24px;
+- Для елемента body 24px x 1.5 = 36px;
+- для елемента c class="one" 36px x 1.5 = 54px;
+- для елемента c class="two" 54px x 1.5 = 36px;
+Висновок:
+Властивості шрифтів успадковуються та задавати розмір шрифтів
+у % чи em треба обережно. 
+-->
+    text in BODY will be 36px
+    <div class="one">
+      text in DIV with class="one" will be 54px
+      <div class="two">text in DIV with class="two" will be 81px</div>
+    </div>
+  </body>
+</html>
