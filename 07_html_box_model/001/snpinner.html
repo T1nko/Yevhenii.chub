@@ -7,6 +7,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spinner</title>
     <link rel="stylesheet" href="css/spinner.css">
+    <style>
+        /* .spinner {
+            display: inline-block;
+            border-top-width: 20px;
+            border-bottom-width: 20px;
+            border-left-width: 40px;
+            border-right-width: 40px;
+            border-style: solid;
+            border-color: transparent;
+             border-top-color: green;
+            border-right-color: red;
+            border-bottom-color: yellow;
+            
+            border-left-color: turquoise;
+        } */
+
+        body {
+            background: grey;
+        }
+
+        .spinner {
+            margin: 30px auto 0;
+            width: 50px;
+            height: 50px;
+            border-top: 10px solid white;
+            border-left: 10px solid white;
+            border-top-left-radius: 100%;
+            animation: spinner 0.3s linear infinite;
+            transform: rotate(-360deg);
+            transform-origin: 100% 100%;
+        }
+
+        @keyframes spinner {
+            0% {
+                transform: rotate(0);
+            }
+        }
+    </style>
 </head>
 
 <body>

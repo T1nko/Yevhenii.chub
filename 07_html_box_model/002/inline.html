@@ -1,46 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>inline block</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <style>
-      .content-box {
-        font-size: 20px;
-        font-family: Arial, sans-serif;
-      }
-      .item-first {
-      }
-    </style>
-  </head>
-  <body>
-    <!--
-1. Задати елементу .item-first 
-           width: 400px; height: 150px;
-   Так як це inline елемент, то width, height не працюють
 
-2. Задати елементу .item-first 
-        padding: 30px; margin: 100px;
+<head>
+  <meta charset="utf-8" />
+  <title>inline block</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .content-box {
+      font-size: 20px;
+      font-family: Arial, sans-serif;
+    }
 
-    margin та padding для inline елементу працюють
-    тільки по горизонталі, тобто висота рядка не змінюється за
-    рахунок цих властивостей
+    .item-first {
+      background-color: yellow;
+      padding: 20px;
+      border: 10px solid red;
+      margin: 20px;
+      width: 220px;
 
-3. Задати елементу .item-first 
-           display: inline-block;
+      display: inline-block;
+    }
+  </style>
+</head>
 
-   Тепер це блок, і відповідно всі блокові свойства 
-   починають повноцінно працювати
--->
+<body>
 
-    <div class="container">
-      <p class="content-box">
-        Lorem ipsum dolor <span class="item-first">sit amet</span>, consectetur
-        adipisicing elit. Laborum eaque illo corrupti natus repudiandae possimus
-        at amet cupiditate maxime voluptatibus velit, pariatur commodi
-        aspernatur. Natus sed numquam sint hic commodi!
-      </p>
-    </div>
-    <!-- /.container-->
-  </body>
+
+
+  <div class="container">
+    <p class="content-box">
+      Lorem ipsum dolor <span class="item-first">sit amet</span>, consectetur
+      adipisicing elit. Laborum eaque illo corrupti natus repudiandae possimus
+      at amet cupiditate maxime voluptatibus velit, pariatur commodi
+      aspernatur. Natus sed numquam sint hic commodi!
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam dicta nesciunt dolorum fugit? Veniam maiores ex
+      saepe nisi libero ducimus repellendus dolorem ad quia cupiditate placeat alias quos, obcaecati repudiandae.
+    </p>
+  </div>
+  <!-- /.container-->
+</body>
+
 </html>
