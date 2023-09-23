@@ -10,10 +10,11 @@ body{
     border: 25px solid #2b81ac;
     margin: auto;
     background-color: #3399cc;
+    padding: 0 110px;
 }
 .h1{
     color: #fff;
-    margin: 41px auto 39px 110px;
+    margin: 41px 0 39px 0;
     font-size: 24px;
 }
 .wi:first-of-type{
@@ -37,11 +38,8 @@ body{
     font-size: 0;
     padding: 2px; 
 }
-.list:hover>.list__item{
-    opacity: .8;
-}
 .list__item:hover{
-    opacity: unset;
+    opacity: .7;
 }
 .list__item{
     display: inline-block;
@@ -90,7 +88,7 @@ body{
 }
 .list__item-li_11 {
     width:calc(100% - 4px) ;
-    background-color: #70b894;
+    background-color: #666699;
 }
 span{
     display: block;
