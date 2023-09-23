@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculate margins</title>
+    <meta charset="utf-8" />
+    <style>
+      .container {
+        width: 1000px;
+        margin: auto;
+        border: 1px solid red;
+      }
+      .container div {
+        padding: 10px 0;
+        background: #999;
+        width: 200px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      .right {
+        /* Притиснути блок за допомогою margins до правого кордону контейнера */
+      }
+      .right-offset {
+        /* Розташувати блок за допомогою margins на 200px від правої межі контейнера */
+      }
+
+      .center {
+        /* Розташувати  по центру контейнера  */
+      }
+      .left-offset {
+        /* Розташувати блок за допомогою margins на 200px від лівої межі контейнера */
+      }
+      .left {
+        /* Притиснути блок за допомогою margins до лівої межі контейнера */
+      }
+    </style>
+  </head>
+  <body>
+    <!--   -->
+
+    <div class="container">
+      <div class="left">Left align <br />2-й случай</div>
+
+      <div class="left-offset">
+        Left align + offset <br />
+        3-й случай
+      </div>
+
+      <div class="center">
+        Center <br />
+        4-й случай
+      </div>
+
+      <div class="right-offset">Right align + offset <br />5-й случай</div>
+
+      <div class="right">
+        Right align <br />
+        6-й случай
+      </div>
+    </div>
+  </body>
+</html>

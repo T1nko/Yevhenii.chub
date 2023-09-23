@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Position block</title>
+    <meta charset="utf-8" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .wrap {
+        position: relative;
+        width: 1000px;
+        margin: 100px auto 0;
+        border: 1px dotted red;
+        position: relative;
+        padding: 50px;
+      }
+
+      .wrap__item {
+        position: absolute;
+        background: navy;
+        color: white;
+        text-align: center;
+      }
+
+      /* зміщуємо абсолютно позиціонований на правий бік батька */
+      .wrap__item {
+      }
+
+      /* розтягуємо абсолютно позиціонований блок за висотою за межі батька */
+      .wrap__item {
+      }
+
+      .wrap__item {
+      }
+
+      /* Розтягуємо абсолютно позиціонований блок по ширині батька
+Це працює, якщо у блоку не вказана ширина */
+
+      .wrap__item {
+      }
+
+      /* розтягуємо абсолютно позиціонований блок на 30px за межі батьківщини
+   батька - працює якщо у блоку не вказана ширина! */
+
+      .wrap__item {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="wrap__item">Inner block</div>
+    </div>
+  </body>
+</html>
