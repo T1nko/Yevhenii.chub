@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Column-fill</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .example {
+        -webkit-columns: 4;
+        -moz-columns: 4;
+        columns: 4;
+        height: 105px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 0 0.5em;
+        background: #ecf0f1;
+      }
+      p {
+        margin: 0;
+      }
+      .example-balance {
+        -webkit-column-fill: balance;
+        -moz-column-fill: balance;
+        column-fill: balance;
+        margin-bottom: 1em;
+      }
+
+      .example-auto {
+        -webkit-column-fill: auto;
+        -moz-column-fill: auto;
+        column-fill: auto;
+      }
+
+      body {
+        font-family: arial, sans-serif;
+        line-height: 1.45;
+        color: #333;
+        max-width: 98%;
+        margin: auto;
+      }
+
+      code {
+        font-family: "Courier New", monospace;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: red;
+      }
+      code.well {
+        color: rgb(233, 31, 108);
+      }
+      .desc {
+        margin-bottom: 1rem;
+        background: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="desc">
+      Якщо вибрати висоту multi-column елементу, можна контролювати як контент
+      заповнює стовпчики. Властивість
+      <code class="well">column-fill</code> застосовується до батьківського
+      елементу, розбитому на стовпці і вказує як вміст розташовується усередині
+      стовпця (column).
+    </div>
+    <code>column-fill: balance;</code>
+    <div class="desc">
+      Браузер намагатиметься заповнити кожну колонку однаковою кількістю
+      контенту, але дозволить збільшуватися висоті колонки. При цьому
+      горизонтально контент розподілятиметься рівномірно
+    </div>
+    <div class="example example-balance">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+        libero libero, placerat at hendrerit nec, vulputate consectetur nisi.
+        Morbi scelerisque lectus id sapien laoreet accumsan. Nunc eget tincidunt
+        ligula, eget suscipit tellus. Sed iaculis nibh gravida faucibus porta.
+        Sed lacinia tristique elementum. Etiam odio sem, dapibus eu tempus vel,
+        consequat non turpis.
+      </p>
+    </div>
+    <code>column-fill: auto;</code>
+    <div class="desc">Вміст колонки досягатиме її висоти</div>
+    <div class="example example-auto">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+        libero libero, placerat at hendrerit nec, vulputate consectetur nisi.
+        Morbi scelerisque lectus id sapien laoreet accumsan. Nunc eget tincidunt
+        ligula, eget suscipit tellus. Sed iaculis nibh gravida faucibus porta.
+        Sed lacinia tristique elementum. Etiam odio sem, dapibus eu tempus vel,
+        consequat non turpis.
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Multi columns</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body,
+    figure {
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      column-width: 700px;
+      column-gap: 50px;
+      column-rule: 4px double red;
+    }
+
+    .cite-box {
+      font: italic bold 1.1rem arial;
+    }
+
+    .img-wrap {
+      display: flex;
+      gap: 30px;
+    }
+
+    .img-box {
+      width: 50%;
+    }
+
+    .img-box__item {
+      max-width: 100%;
+      width: 100%;
+      vertical-align: top;
+    }
+
+    .title {}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <article class="box">
+      <h2 class="box__title">Head 1</h2>
+      <p class="box__item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt nostrum possimus officia
+        velit rerum recusandae nisi facere nesciunt reprehenderit magni magnam aut vel cupiditate, ab a ad natus soluta
+        porro!</p>
+      <div class="img-wrap">
+        <div class="img-box">
+          <img class="img-box__item" src="img/react.png" />
+        </div>
+
+        <div class="img-box">
+          <img class="img-box__item" src="img/react.png" />
+        </div>
+      </div>
+      <p class="box__item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum expedita impedit, quis culpa
+        sit libero sint natus consequuntur cum voluptates eius velit enim exercitationem aliquam ducimus magni sapiente
+        aspernatur id?</p>
+
+    </article>
+    <article class="box">
+      <h2 class="box__title">Head 2</h2>
+      <p class="box__item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet officiis quisquam cumque id dolor explicabo
+        assumenda, provident repudiandae saepe ipsa dolorum, a, nulla voluptas eius eum molestias distinctio animi?
+        Magnam.
+      <blockquote class="cite-box">
+        The main benefit of using CSS-based columns is flexibility; content can flow from one column to another, and the
+        number of columns can vary depending on the size of the viewport.
+      </blockquote>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde voluptatem repellat incidunt iste cumque in
+      necessitatibus eius est dolor nam earum, tenetur quibusdam rem, reiciendis perspiciatis eaque, recusandae numquam
+      labore.
+      </p>
+
+
+    </article>
+    <article class="box">
+      <h2 class="box__title">Head 3</h2>
+      <p class="box__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quidem sunt alias earum
+        repudiandae rerum reiciendis deserunt autem beatae, possimus dicta neque sit magnam nobis culpa provident?
+        Provident, ex omnis!
+      <p>
+      <p class="box__item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ipsam quos ipsa minima
+        quidem voluptas natus sapiente corporis doloribus placeat architecto quod dolorem aliquam, dicta sit. Sit neque
+        asperiores iure?</p>
+    </article>
+  </div>
+</body>
+
+</html>
