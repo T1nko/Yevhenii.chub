@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+body{
+    box-sizing: border-box;
+    font-family: ubuntu;
+    padding: 10px;
+}
+.container{
+    max-width: 1490px;
+    border: 25px solid #2b81ac;
+    margin: auto;
+    background-color: #3399cc;
+    padding: 0 110px;
+}
+.h1{
+    color: #fff;
+    margin: 41px 0 39px 0;
+    font-size: 24px;
+}
+.wi:first-of-type{
+    font-size: 27px;
+    vertical-align: middle;
+}
+.list-row .wi{
+    font-size: 42px;
+    vertical-align: middle;
+    padding: 10px;
+}
+.content{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+.list-row{
+    list-style-type: none;
+    width: calc(100% - 4px);
+    padding: 0;
+    font-size: 0;
+    padding-left: 2px;
+}
+.list-row:first-of-type{
+    padding-top: 2px;
+}
+.list__item:hover{
+    opacity: 0.7;
+}
+.list__item{
+    display: inline-block;
+    width: calc(25% - 4px);
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    margin: 2px;
+    padding-top: 26px;
+    padding-bottom: 4px;
+    opacity: 1;
+}
+.list-row:first-of-type{
+padding-left: 2px;
+}
+.list__item-li_1{
+    width:calc(50% - 4px) ;
+    background-color: #70b8db;
+}
+.list__item-li_2{
+    background-color: #70dbdb;
+}
+.list__item-li_3{
+    background-color: #b894b8;
+}
+.list__item-li_4{
+    background-color: #c24747;
+}
+.list__item-li_5{
+    background-color: #eb9580;
+}
+.list__item-li_6{
+    background-color: #ffdb94;
+}
+.list__item-li_7{
+    background-color: #b8dbb8;
+}
+.list__item-li_8{
+    background-color: #94b8b8;
+}
+.list__item-li_9{
+    width:calc(50% - 4px) ;
+    background-color: #db94b8;
+}
+.list__item-li_10{
+    background-color: #70b894;
+}
+.list__item-li_11 {
+    width:calc(100% - 4px) ;
+    background-color: #666699;
+}
+span{
+    display: block;
+    font-size: 22px;
+}
+.paragraph{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    padding-top: 35px;
+    padding-bottom: 100px;
+    background-color: #3399cc;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
