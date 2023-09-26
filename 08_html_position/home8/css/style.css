@@ -12,11 +12,10 @@ body{
     background-color: #ffffff;
     padding-top: 42px;
     padding-bottom: 42px;
-
-
 }
 .row{
     text-align: center;
+    white-space: nowrap;
 }
 .card{
     width: 270px;
@@ -26,17 +25,14 @@ body{
     margin: 15px;
     display: inline-block;
     text-align: left;
+    position: relative;
+    overflow: hidden;
 }
 .img{
     width: 100%;
-    
-    border-top-right-radius:9px ;
-    border-top-left-radius:9px ;
-    
-
 }
 .info{
-    padding-left: 10px;
+  padding-left: 10px;  
 }
 .friends{
     border-top: 1px solid #858585;
@@ -51,7 +47,7 @@ body{
     content: url(../img/user-group-man-man\ 1.png);
     display: inline-block;
     vertical-align: -10px;
-    padding-right: 12px;  
+    padding-right: 12px;
 }
 .folowers{
     padding-bottom: 10px;
