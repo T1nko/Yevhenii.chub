@@ -1,21 +1,66 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>repeating gradient</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/style_lab3.css" />
-    <style></style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="btn-box">
-        <button id="btn" class="btn-box__item">Click me</button>
-      </div>
-      <div class="spinner-box">
-        <div class="spinner__item"></div>
-      </div>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>repeating gradient</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/style_lab3.css" />
+  <style>
+    .spinner-box {
+      width: 600px;
+      height: 60px;
+      margin: auto;
+      position: relative;
+      overflow: hidden;
+      display: none;
+    }
+
+    .spinner__item {
+      width: 1200px;
+      height: 100%;
+      background: repeating-linear-gradient(-45deg,
+          rgba(255, 255, 255, 0.6) 10px,
+          rgb(255, 255, 0) 30px);
+      position: absolute;
+      left: -600px;
+      animation: bar 3s linear infinite;
+    }
+
+    @keyframes bar {
+      100% {
+        left: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="btn-box">
+      <button id="btn" class="btn-box__item">Click me</button>
     </div>
-  </body>
+    <div id="spinner" class="spinner-box">
+      <div class="spinner__item"></div>
+    </div>
+  </div>
+
+  <script>
+    const btn = document.getElementById('btn')
+    const spinner = document.getElementById('spinner')
+
+    btn.onclick = function () {
+      spinner.style.display = "block";
+      this.setAttribute('disabled', true);
+      const that = this;
+      setTimeout(function () {
+        spinner.style.display = "none";
+        that.removeAttribute('disabled');
+
+      }, 3000)
+    }
+  </script>
+</body>
+
 </html>

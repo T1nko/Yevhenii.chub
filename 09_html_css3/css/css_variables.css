@@ -1,3 +1,9 @@
+:root {
+  --my-color: black;
+  --bg-color: white;
+  --padding-btn: 8px 16px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -11,3 +17,46 @@ body {
   padding: 0 12px;
 }
 /* ================ todo ================  */
+body {
+  color: var(--my-color);
+}
+
+.section-box__title {
+  --my-color: black;
+  color: var(--my-color);
+}
+
+.section-box {
+  --content-color: tomato;
+}
+.article-box {
+  color: var(--content-color);
+}
+.article-box {
+  background: var(--bg-color);
+}
+
+.article-box__btn {
+  --color-h: 150;
+  --color-s: 20%;
+  --color-l: 50%;
+  background: hsl(var(--color-h), var(--color-s), var(--color-l));
+  padding: var(--padding-btn);
+}
+
+@media (min-width: 768px) {
+  .section-box__title {
+    --my-color: green;
+  }
+  .article-box__btn {
+    --color-s: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .section-box__title {
+    --my-color: lightblue;
+  }
+  .article-box__btn {
+    --color-s: 80%;
+  }
+}

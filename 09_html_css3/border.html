@@ -1,20 +1,78 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>HTML advanced</title>
 
-    <style>
-      .box {
-        width: 220px;
-        height: 220px;
-        margin: 30px auto 0;
-        border: 1px solid red;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="box"></div>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>HTML advanced</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .box {
+      width: 220px;
+      height: 220px;
+      margin: 30px auto 0;
+      border: 1px solid red;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, .4);
+    }
+
+    .box1 {
+      width: 220px;
+      height: 220px;
+      margin: 30px auto 0;
+      box-shadow: 0 0 0 2px gray, 0 0 0 4px white, 0 0 0 6px gray;
+
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .btn {
+      background: rgb(32, 130, 228);
+      padding: 8px 16px;
+      color: white;
+      border: 0;
+      border-radius: 8px;
+      transition: all 1s;
+    }
+
+    .btn:hover {
+      cursor: pointer;
+      background: rgb(60, 136, 213);
+      box-shadow: 0 0 15px rgba(15, 80, 146, 0.5);
+    }
+
+    /* .title {
+      font-size: 120px;
+      text-align: center;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, .6);
+    }
+ */
+    body {
+      background: #a5a1a1;
+    }
+
+    .title {
+      font-size: 120px;
+      text-align: center;
+      text-shadow: 0 -1px 0 white;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="title">Hello CSS 3</h1>
+  <div class="box"></div>
+  <div class="box1"></div>
+
+  <div class="container">
+    <button class="btn">Click me</button>
+  </div>
+</body>
+
 </html>
