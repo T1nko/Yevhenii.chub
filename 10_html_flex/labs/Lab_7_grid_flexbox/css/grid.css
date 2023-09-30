@@ -1,0 +1,25 @@
+/* grid system -- mobile first! */
+
+@media (min-width: 576px) {
+  .container {
+  }
+
+  .col {
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+  }
+    /*  col - 2% - col - 2% - col  = (100% - 4%)/3  = 32 */
+  .col {
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+  }
+  /*  col - 2% - col - 2% - col - 2% - col = (100% - 6%)/4  = 23.5 */
+  .col {
+  }
+}

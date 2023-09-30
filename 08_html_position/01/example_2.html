@@ -1,49 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Using position</title>
-    <meta charset="utf-8" />
-    <style>
-      * {
-        padding: 0;
-        margin: 0;
-      }
-      .header {
-        height: 100px;
-        background: #d3ecfc;
-        text-align: center;
-      }
-      .container {
-        background: #cbffd5;
-        height: 300px;
-        /*  margin-right:200px;  */
-      }
-      .aside {
-        background: #ffe2e2;
-        width: 200px;
-        height: 300px;
-        /*
-		position:absolute; 
-		top:100px; 
-		right:0;
-	*/
-      }
-    </style>
-  </head>
-  <body>
-    <div class="header">
-      <h1>Welcome to our site</h1>
-    </div>
 
-    <div class="container">
-      <p>
-        Lorem ipsum quidam takimata adipiscing te cum, ei accusata senserit qui.
-        Pri accusata ullamcorper eu, has natum tollit qualisque cu. Ne zzril
-        putent cetero sed, vel graece ponderum te. Vix an liber gloriatur, harum
-        discere platonem vel ei.
-      </p>
-    </div>
+<head>
+  <title>Using position</title>
+  <meta charset="utf-8" />
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
 
-    <aside class="aside">Block aside</aside>
-  </body>
+    .header {
+      height: 100px;
+      background: #d3ecfc;
+      text-align: center;
+    }
+
+    .container {
+      background: #cbffd5 url(img/logo.svg) no-repeat;
+      height: 300px;
+      margin-left: 200px;
+      padding: 12px;
+
+
+    }
+
+    .aside {
+      background: #ffe2e2;
+      width: 200px;
+      height: 300px;
+
+      position: absolute;
+      top: 100px;
+      left: 0;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1>Welcome to our site</h1>
+  </div>
+
+  <div class="container">
+    <p>
+      Lorem ipsum quidam takimata adipiscing te cum, ei accusata senserit qui.
+      Pri accusata ullamcorper eu, has natum tollit qualisque cu. Ne zzril
+      putent cetero sed, vel graece ponderum te. Vix an liber gloriatur, harum
+      discere platonem vel ei.
+    </p>
+  </div>
+
+  <aside class="aside">Block aside</aside>
+</body>
+
 </html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Flexbox demo</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <style>
+      body {
+        width: 80%;
+        margin: 0 auto;
+        padding: 2%;
+        line-height: 1.6;
+      }
+      .flex-container {
+        margin: 1em 0;
+        border: 1px solid #333;
+        height: 600px;
+        flex-wrap: wrap;
+        display: flex;
+      }
+      .box {
+        margin: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+1. Вирівнювання багаторядкового контенту 
+- працює тільки в багаторядковому режимі 
+  (при flex-wrap: wrap; або flex-wrap: wrap-reverse;)
+  
+ align-content: stretch | flex-start | flex-end | space-between | space-around | center
+
+ -->
+
+    <section class="flex-container">
+      <div class="box"><h3>Item 1</h3></div>
+      <div class="box"><h3>Item 2</h3></div>
+      <div class="box"><h3>Item 3</h3></div>
+      <div class="box"><h3>Item 4</h3></div>
+      <div class="box"><h3>Item 5</h3></div>
+      <div class="box"><h3>Item 6</h3></div>
+      <div class="box"><h3>Item 7</h3></div>
+      <div class="box"><h3>Item 8</h3></div>
+      <div class="box"><h3>Item 9</h3></div>
+      <div class="box"><h3>Item 10</h3></div>
+    </section>
+  </body>
+</html>

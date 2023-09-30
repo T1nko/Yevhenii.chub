@@ -1,68 +1,86 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Position</title>
-    <meta charset="utf-8" />
-    <style>
-      body {
-        font-size: 18px;
-      }
-      .container {
-        max-width: 80%;
-        margin: auto;
-      }
 
-      .header {
-        height: 100px;
-        background: #f88;
-        padding: 1px 0;
-        text-align: center;
-      }
-      .footer {
-        height: 100px;
-        background: #f88;
-        text-align: center;
-      }
+<head>
+  <title>Position</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <style>
+    body {
+      font-size: 18px;
+    }
 
-      .box {
-        height: 300px;
-        background: #e2e2e2;
-        padding: 1px 0;
-        /* position:relative; */
-      }
+    .container {
+      max-width: 80%;
+      margin: auto;
+    }
 
-      .box__author {
-        background: teal;
-        color: white;
-        padding: 1rem;
-        /*position:absolute; */
-        /*  top:0;
-  	  right:0;
-  */
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <header class="header">
-        <h1 class="header__title">Welcome to our site</h1>
-      </header>
+    .header {
+      padding: 20px;
+      background: #f88;
+      padding: 1px 0;
+      text-align: center;
+    }
 
-      <main class="box">
-        <article class="box__content">
-          <h2 class="box__content-title">This is article</h2>
-          <p class="box__content-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-            laudantium dolorem ad quae repudiandae ducimus doloremque
-            exercitationem, voluptatum molestias impedit, similique quidem modi
-            at, ipsam quos sunt atque. Adipisci expedita dolor exercitationem
-            nesciunt illo rerum beatae vero nihil nam perspiciatis!
-          </p>
-        </article>
-        <aside class="box__author">About author</aside>
-      </main>
+    .footer {
+      height: 100px;
+      background: #f88;
+      text-align: center;
+    }
 
-      <footer class="footer">Footer</footer>
-    </div>
-  </body>
+    .box {
+      height: 300px;
+      background: #e2e2e2;
+      padding: 1px 0;
+      position: relative;
+    }
+
+    .box__author {
+      background: teal;
+      color: white;
+      padding: 1rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+
+    }
+
+    .header {
+      position: relative;
+    }
+
+    .logo {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="header__title">Welcome to our site</h1>
+      <div class="logo"><img src="img/logo.svg" /></div>
+    </header>
+
+    <main class="box">
+      <article class="box__content">
+        <h2 class="box__content-title">This is article</h2>
+        <p class="box__content-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+          laudantium dolorem ad quae repudiandae ducimus doloremque
+          exercitationem, voluptatum molestias impedit, similique quidem modi
+          at, ipsam quos sunt atque. Adipisci expedita dolor exercitationem
+          nesciunt illo rerum beatae vero nihil nam perspiciatis!
+        </p>
+      </article>
+      <aside class="box__author">About author</aside>
+    </main>
+
+    <footer class="footer">Footer</footer>
+  </div>
+</body>
+
 </html>

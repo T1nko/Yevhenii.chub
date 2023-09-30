@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+     <title>Flexbox demo</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" integrity="sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="css/base.css">
+    <style>
+   .flex-container {
+      display:flex;
+      width: 600px;
+      margin: 1rem auto;
+      background: white;
+      border-top: 5px solid #999;
+      border-bottom: 5px solid #999;
+    }
+    .item {
+      padding: 20px;
+      border-left: 5px solid #999;
+      border-right: 5px solid #999;
+    }
+/*  ======================== Добавлять стили ниже !!! =================== */
+
+
+
+/*  ===================================================================== */
+  </style>
+</head>
+<body>
+<header>
+<section class="flex-container">
+         <div class="item item1"><h3>short</h3></div>
+        <div class="item item2"><h3>long words</h3></div>
+  </section>
+<hr>
+
+
+ 
+
+<div class="fl">
+  <div class="fl__title">Встановити</div>
+  <div  class="fl__styles">
+      <div>.flex-container {<br>&nbsp;&nbsp;&nbsp; width: 600px;<br>}</div>
+      <div>.item {<br>&nbsp;&nbsp;&nbsp;&nbsp;border: 5px solid #999;
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;padding: 20px;<br>}</div>
+  </div>
+  <div class="fl__content">
+    <div class="mb-3">padding + border = 50px + 50px = <span class="pink">100px</span></div>
+    <div class="mb-3">ширина контенту:  item1 = 100px, item2 = 200px - всього <span class="pink">300px</span></div>
+    <div class="mb-3">100px + 300px = <span class="pink">400px</span></div>
+    <div class="mb-3">Вільний простір для розподілення 600 - 400px  = <span class="pink">200px</span></div>
+  </div>
+</div>
+
+
+<div class="container-fl">
+<div class="tabs">
+  <ul id="tabs-box">
+    <li data-content="#case1">
+      <a>
+        <span>Case 1</span>
+      </a>
+    </li>
+    <li data-content="#case2">
+      <a>
+        <span>Case 2</span>
+      </a>
+    </li>
+    <li data-content="#case3">
+      <a>
+        <span>Case 3</span>
+      </a>
+    </li>
+    <li data-content="#case4">
+      <a>
+        <span>Case 4</span>
+      </a>
+    </li>
+  </ul>
+</div>
+  
+
+<div class="tabs-content explain">
+    <div id="case1" class="tabs-content__item">
+        <div class="fl">
+            <div class="fl__title">Встановити</div>
+            <div  class="fl__styles">
+               <div>.item1 { flex-grow: 1; }</div>
+               <div>.item2  { flex-grow: 2;  }</div>
+            </div>
+            <div class="fl__content">
+                <div class="mb-3">При цьому default flex-basis -> auto і весь вільний простір контейнера розподіляється у кожному елементі додаючись до ширини контенту, тобто: </div>
+                <div class="mb-3">flex: 1 + 2 = 3  => 200 / 3 = <span class="pink">66.6px</span></div>
+                <div class="mb-3">ширина контенту item1 = (100 +  66.6) ->  <span class="red">166.6px</span></div>
+                <div>ширина контенту item2 = (200px + 133.3px) ->  <span class="red">333.3px</span></div>
+            </div>
+         </div>
+    </div>
+<!-- case 2 -->
+<div id="case2" class="tabs-content__item">
+        <div class="fl">
+            <div class="fl__title">Встановити</div>
+            <div  class="fl__styles">
+               <div>.item { flex-basis: 0 }</div>
+                <div>.item1 { flex-grow: 1; }</div>
+                <div>.item2  { flex-grow: 2;  }</div>
+            </div>
+            <div class="fl__content">
+                  <div class="mb-3">Тепер розподіл вільного простору в контейнері браузер здійснює  не враховуватиме ширину контенту !!!<br>
+                        І вільний простір розподіляється не між контентом, а між елементами
+                    </div>
+                  <div class="mb-3">padding + border = 50px + 50px = <span class="pink">100px</span></div>
+                  <div class="mb-3">remaining spacing = 600 - 100 = <span class="pink">500px</span></div>
+                  <div class="mb-3">flex = 1 + 2 = 3 => 500 / 3 = <span class="pink">166.6px</span></div>
+                  <div class="mb-3">ширина блоку item1 = 166.6px +  50px = <span class="red">216.6px</span></div>
+                  <div class="mb-3">ширина блоку item2 = 333.3px  + 50px = <span class="red">383.3px</span></div>
+                  
+            </div>
+        </div>
+   </div>
+<!-- case 3 -->
+<div id="case3" class="tabs-content__item">
+        <div class="fl">
+            <div class="fl__title">Встановити</div>
+            <div  class="fl__styles">
+               <div>.item { flex-basis: 150px; }</div>
+                <div> .item1 { flex-grow: 1; }</div>
+                <div>.item2  { flex-grow: 2;  }</div>
+            </div>
+            <div class="fl__content">
+                  <div class="mb-3">Загальна ширина віставлена за допомогою flex-basis = 2 * 150px = 300px</div>
+                  <div class="mb-3">flex = 1 + 2 = 3</div>
+                  <div class="mb-3">600 - 300px = 300 / 3 = <span class="pink">100px</span></div>
+                  <div class="mb-3">ширина блоку item1 = 150px + 100px = <span class="red">250px</span></div>
+                  <div class="mb-3">ширина блоку item1 = 150px + 200px = <span class="red">350px</span></div>
+             </div>
+        </div>
+   </div>
+<!-- case 4 -->
+<div id="case4" class="tabs-content__item">
+        <div class="fl">
+            <div class="fl__title">Встановити</div>
+            <div  class="fl__styles">
+               <div>.item  {flex-basis: 0;}</div>
+                <div>.item1  {flex-basis: 150px; flex-grow: 1;}</div>
+                <div>.item2 {flex-grow: 2;}</div>
+            </div>
+            <div class="fl__content">
+                  <div class="mb-3">Загальна ширина flex-basis = 150px  + 50 = <span class="pink">200px</span></div>
+                  <div class="mb-3">flex = 1 + 2 = <span class="pink">3</span></div>
+                  <div class="mb-3">600 - 200px = 400 / 3 = <span class="pink">133px</span></div>
+                  <div class="mb-3">ширина блоку item1 = 150px +  133px = <span class="red">283px</span></div>
+                  <div class="mb-3">ширина блоку item2 =  133 * 2  + 50px  = <span class="red">316px</span></div>
+            </div>
+        </div>
+   </div>
+
+</div><!-- /.container -->
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+ $('.tabs-content__item').hide().eq(0).show();
+
+$('#tabs-box li').first()
+    .addClass('is-active')
+    .parent('ul')
+    .on('click', 'li', function() {
+        const $this =  $(this);
+        $('.tabs-content__item').hide();
+        $this.addClass('is-active')
+               .siblings('li')
+               .removeClass('is-active');
+        
+        $($this.data('content')).show();
+})
+
+</script>
+</body>
+</html>

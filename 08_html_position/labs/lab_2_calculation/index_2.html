@@ -1,55 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Position block</title>
-    <meta charset="utf-8" />
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      .wrap {
-        position: relative;
-        width: 1000px;
-        margin: 100px auto 0;
-        border: 1px dotted red;
-        position: relative;
-        padding: 50px;
-      }
 
-      .wrap__item {
-        position: absolute;
-        background: navy;
-        color: white;
-        text-align: center;
-      }
+<head>
+  <title>Position block</title>
+  <meta charset="utf-8" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-      /* зміщуємо абсолютно позиціонований на правий бік батька */
-      .wrap__item {
-      }
+    .wrap {
+      position: relative;
+      width: 1000px;
+      margin: 100px auto 0;
+      border: 1px dotted red;
+      position: relative;
+      padding: 50px;
+    }
 
-      /* розтягуємо абсолютно позиціонований блок за висотою за межі батька */
-      .wrap__item {
-      }
+    .wrap__item {
+      position: absolute;
+      background: navy;
+      color: white;
+      text-align: center;
+    }
 
-      .wrap__item {
-      }
+    /* зміщуємо абсолютно позиціонований на правий бік батька */
+    .wrap__item {
+      position: absolute;
+      right: 0;
+    }
 
-      /* Розтягуємо абсолютно позиціонований блок по ширині батька
+    /* розтягуємо абсолютно позиціонований блок за висотою за межі батька */
+    /*  .wrap__item {
+      top: 0;
+      bottom: -30px;
+    }
+
+    .wrap__item {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+ */
+    /* Розтягуємо абсолютно позиціонований блок по ширині батька
 Це працює, якщо у блоку не вказана ширина */
 
-      .wrap__item {
-      }
+    .wrap__item {
+      left: -30px;
+      right: -30px;
+    }
 
-      /* розтягуємо абсолютно позиціонований блок на 30px за межі батьківщини
+    /* розтягуємо абсолютно позиціонований блок на 30px за межі батьківщини
    батька - працює якщо у блоку не вказана ширина! */
 
-      .wrap__item {
-      }
-    </style>
-  </head>
-  <body>
-    <div class="wrap">
-      <div class="wrap__item">Inner block</div>
-    </div>
-  </body>
+    .wrap__item {}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="wrap__item">Inner block</div>
+  </div>
+</body>
+
 </html>

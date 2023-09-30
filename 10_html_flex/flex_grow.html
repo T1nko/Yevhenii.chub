@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Flexbox Layout</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        width: 1002px;
+        border: 1px dotted red;
+        margin: 30px auto 0;
+        display: flex;
+      }
+      .item {
+        padding: 100px 0;
+        text-align: center;
+        background: #ccf;
+      }
+      .item_2 {
+        background: #cfc;
+      }
+      .item_3 {
+        background: #ffc;
+      }
+
+      /*  ======================= Todo  */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item_1">Item 1</div>
+      <div class="item item_2">Item 2</div>
+      <div class="item item_3">Item 3</div>
+    </div>
+
+    <!-- 
+<div class="container">
+    <div class="item item_1">Width: 272px</div>
+    <div class="item item_2">Width: 456px</div>
+    <div class="item item_3">Width: 272px</div>
+</div> 
+-->
+  </body>
+</html>

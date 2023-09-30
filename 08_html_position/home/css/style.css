@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+}
+figure {
+  margin: 0;
+}
+.card__img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+/* ------------------------------------------------------------- */
+
+.container {
+  max-width: 1200px;
+  padding: 40px 10px 0;
+  margin: 0 auto;
+}
+.card-wrap {
+  font-size: 0;
+  margin-left: -30px;
+}
+/* ------------------------------CARD CONTENT------------------------------- */
+
+.card {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  margin-right: 0;
+  width: calc(25% - 30px);
+  border: 1px solid #818181;
+  border-radius: 15px;
+  overflow: hidden;
+  font-size: initial;
+}
+.card__meta-top {
+  padding: 10px 1rem 2px 10px;
+  border-bottom: 2px solid #818181;
+}
+.card__meta-bottom {
+  padding: 0 1rem;
+  color: #818181;
+}
+
+.card__meta-conttent {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+.card__meta-conttent_title {
+  font-weight: 400;
+}
+
+.card__meta-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.card__meta-conttent_year {
+  color: #818181;
+}
+.card__item_top {
+  border-bottom: 1px solid #818181;
+}
+.card__icon {
+  margin-left: 6px;
+  font-size: 22px;
+}

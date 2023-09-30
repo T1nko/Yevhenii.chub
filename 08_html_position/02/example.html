@@ -1,36 +1,71 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Float</title>
-    <meta charset="utf-8" />
-    <style>
-      body {
-        font-size: 1.5em;
-      }
-      .container {
-      }
-      .sidebar {
-        background: #d5d5d5;
-        height: 600px;
-        /*
-	float:right; 
-	width:70%;
-*/
-      }
-      .content {
-        background: green;
-        height: 600px;
-        /*
-	float:left; 
-	width:30%;
-	*/
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="sidebar">Sidebar</div>
-      <div class="content">Content</div>
+
+<head>
+  <title>Float</title>
+  <meta charset="utf-8" />
+  <style>
+    body {
+      font-size: 1.5em;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .sidebar {
+      background: #d5d5d5;
+      float: right;
+      width: 40%;
+    }
+
+    .content {
+      background: green;
+      float: left;
+      width: 60%;
+
+    }
+
+    .footer {
+      background: #e06464;
+    }
+
+    .clearfix::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">Welcome</div>
+
+    <div class="wrap clearfix">
+      <div class="sidebar">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique laudantium corporis tempora fugiat beatae
+          nemo ipsum numquam rem minus aut temporibus eum odit eligendi expedita, adipisci vero in nulla officiis?</p>
+      </div>
+      <div class="content">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur repellat velit deserunt iusto dolore
+          perspiciatis in molestiae quisquam sint corporis, labore placeat, officiis rem ipsam accusamus pariatur
+          necessitatibus beatae aspernatur?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique laudantium corporis tempora fugiat beatae
+          nemo
+          ipsum numquam rem minus aut temporibus eum odit eligendi expedita, adipisci vero in nulla officiis?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique laudantium corporis tempora fugiat beatae
+          nemo
+          ipsum numquam rem minus aut temporibus eum odit eligendi expedita, adipisci vero in nulla officiis?</p>
+
+      </div>
+
     </div>
-  </body>
+    <footer class="footer">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, aspernatur.</p>
+    </footer>
+  </div>
+</body>
+
 </html>

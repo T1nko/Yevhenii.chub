@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Courses</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Varela+Round"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="main-header__logo"></div>
+      <ul class="main-nav">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Courses</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Teachers</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">About us</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Contacts</a>
+        </li>
+      </ul>
+    </header>
+    <!--/.main-header-->
+
+    <div class="row row_main">
+      <div class="primary col">
+        <h2 class="col__title">Welcome!</h2>
+        <p class="col__content">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+        <a class="col__button" href="#">Learn More</a>
+      </div>
+      <!--/.primary-->
+
+      <div class="secondary col">
+        <h2 class="col__title">Great courses</h2>
+        <p class="col__content">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br />
+          Veritatis dolores sunt error facere neque corrupti.
+        </p>
+        <a class="col__button" href="#">Learn More</a>
+      </div>
+      <!--/.secondary-->
+
+      <div class="tertiary col">
+        <h2 class="col__title">How to get here</h2>
+        <p class="col__content">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br />
+          Veritatis dolores sunt error facere neque corrupti.
+        </p>
+        <a class="col__button" href="#">Learn More</a>
+      </div>
+      <!--/.tertiary-->
+    </div>
+
+    <!-- ===== Foooter ========================= -->
+    <footer class="main-footer">
+      <p>
+        &copy; <span id="footer-date"></span>
+        <a href="https://beetroot.academy">Beetroot Academy</a>
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById(
+        "footer-date"
+      ).innerHTML = new Date().getFullYear();
+    </script>
+  </body>
+</html>

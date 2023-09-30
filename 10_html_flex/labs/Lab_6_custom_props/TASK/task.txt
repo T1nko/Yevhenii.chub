@@ -1,0 +1,15 @@
+Завдання слухачам
+- використовуючи css variables реалізувати зміну background
+  для .col__button    
+      0 - 769px -> #3acec2
+      769px - 1024px ->   rgb(188, 32, 35);
+      1025px и більше ->  rgb(51, 156, 9);
+
+
+-  використовуючи css variables реалізувати зміну 
+   background елемента .main-header__logo 
+       0 - 769px -> #3acec2 -> немає зображення
+       769px - 1024px -> img/logo.jpg
+       1025px и більше -> img/logo1.jpg
+
+ Приклади - на скріншотах   

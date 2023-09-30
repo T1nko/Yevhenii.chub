@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>parant collapsing</title>
-    <meta charset="utf-8" />
-    <style>
-      .container {
-        max-width: 80%;
-        margin: auto;
-        border: 1px solid red;
-        background: #ffe2e2;
-        /*  overflow:hidden; */
-      }
 
-      .im {
-        float: left;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <img class="im" src="img/0011.jpg" />
-      <p>Some text</p>
-    </div>
-  </body>
+<head>
+  <title>parant collapsing</title>
+  <meta charset="utf-8" />
+  <style>
+    .container {
+      max-width: 80%;
+      margin: auto;
+      border: 1px solid red;
+      background: #ffe2e2;
+
+    }
+
+    .im {
+      float: left;
+    }
+
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container clearfix">
+    <img class="im" src="img/0011.jpg" />
+    <p>Some text</p>
+
+  </div>
+</body>
+
 </html>

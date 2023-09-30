@@ -1,0 +1,172 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Varela Round", sans-serif;
+  line-height: 1.6;
+  color: #3a3a3a;
+  margin: 0;
+}
+.row_main {
+  flex: 1;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+  font-size: 0.95em;
+  margin: 0 0 1em 0;
+}
+h2,
+h3,
+a {
+  color: #093a58;
+}
+h2,
+h3 {
+  margin: 0 0 0.8em 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+  font-size: 1.35em;
+  margin: 0;
+}
+.main-nav {
+  margin-top: 5px;
+}
+.name a,
+.main-nav a {
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+}
+.main-nav a {
+  font-size: 0.95em;
+  color: #3acec2;
+  text-transform: uppercase;
+}
+.main-nav a:hover {
+  color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.banner,
+.main-footer {
+  text-align: center;
+}
+.banner {
+  color: #000;
+  background: #edefe4;
+  padding: 3.2em 0;
+  margin-bottom: 48px;
+}
+.col {
+  padding: 1em;
+  background: #edf4f7;
+  border-radius: 0.35em;
+  margin: 0 0.5em 0.8em;
+}
+.main-footer {
+  background: #d9e4ea;
+  padding: 2em 0;
+  margin-top: 30px;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+  width: 190px;
+}
+.headline {
+  margin-bottom: 0;
+}
+.feat-img {
+  border-radius: 5px;
+}
+.main-header__logo {
+  display: none;
+}
+.col__button {
+  margin-top: auto;
+  align-self: center;
+  color: #fff;
+  text-align: center;
+  padding: 0.625em 1.25em;
+  border-radius: 0.35em;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+  .main-header,
+  .row {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .tagline {
+    font-size: 1.4em;
+  }
+  .main-header,
+  .main-nav,
+  .row {
+    display: flex;
+  }
+
+  .main-header {
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-header__logo {
+    display: initial;
+    width: 80px;
+    height: 80px;
+    border: 6px solid rgb(188, 32, 35);
+    border-radius: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 1025px) {
+  .main-header,
+  .row {
+    width: 80%;
+    max-width: 1150px;
+  }
+}

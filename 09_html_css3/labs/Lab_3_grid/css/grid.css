@@ -1,10 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500&display=swap");
+
+:root {
+  --colm: 10px;
+  --colc: 4;
+  --colw: calc((100% - var(--colm) * (var(--colc) + 1)) / var(--colc));
+  --bg-padding: 15px;
+  --main-color: #e2e2e2;
+}
 * {
   box-sizing: border-box;
 }
- html {
-     font-size: 16px;
- }
+html {
+  font-size: 16px;
+}
 body {
   margin: 0;
   font-family: "Ubuntu", sans-serif;
@@ -12,4 +20,41 @@ body {
 .container {
   max-width: 90%;
   margin: 30px auto 0;
+  padding: 0 var(--bg-padding);
+}
+.well {
+  margin: 0;
+  background: var(--main-color);
+  padding: 10px 20px;
+}
+
+.row {
+  font-size: 0;
+  margin-left: calc(var(--bg-padding) * -1);
+  margin-right: calc(var(--bg-padding) * -1);
+}
+
+.col {
+  font-size: initial;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: var(--colm);
+  margin-bottom: var(--colm);
+  margin-top: 0;
+}
+.col_1 {
+  width: var(--colw);
+}
+.col_2 {
+  width: calc((var(--colw) * 2) + var(--colm));
+}
+.col_3 {
+  width: calc((var(--colw) * 3) + calc(var(--colm) * 2));
+}
+.col_4 {
+  width: calc((var(--colw) * 4) + calc(var(--colm) * 3));
+}
+
+.col_5 {
+  width: calc((var(--colw) * 5) + calc(var(--colm) * 4));
 }
