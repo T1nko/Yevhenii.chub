@@ -1,29 +1,57 @@
 /* ================================= 
   Base Styles
 ==================================== */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  flex: 1;
+}
 
+.container {
+  max-width: 1150px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.container-blog {
+  background: pink;
+}
+.container-800 {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px 12px;
+}
 /* ================================= 
   Media Queries
 ==================================== */
 
 @media (min-width: 769px) {
-
-	.main-header,
-	.main-nav {
-		display: flex;
-	}
-	.main-header {
-		flex-direction: column;
-		align-items: center;
-	}
-
+  .main-header,
+  .main-nav {
+    display: flex;
+  }
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .col-blog-wrap {
+    display: flex;
+    gap: 20px;
+  }
+  .col-blog {
+    flex: 1;
+    background: #e2e2e2;
+    padding: 1rem;
+    border-radius: 12px;
+  }
 }
 
 @media (min-width: 1025px) {
-
-	.main-header {
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

@@ -1,20 +1,26 @@
 /* ====================== vars =============== */
-
+:root {
+  --btn-color: #3acec2;
+  --bg-img: url(../img/logo.jpg);
+}
 /* ====================== no delete =============== */
 .col__button {
-  background: #3acec2;
+  background: var(--btn-color);
 }
 
 /* ====================== media queries =============== */
 @media (min-width: 769px) {
-  .main-header__logo {
-    background-image: url(../img/logo.jpg);
+  :root {
+    --btn-color: rgb(188, 32, 35);
   }
-  .col__button {
+  .main-header__logo {
+    background-image: var(--bg-img);
   }
 }
 
 @media (min-width: 1025px) {
-  .col__button {
+  :root {
+    --btn-color: rgb(51, 156, 9);
+    --bg-img: url(../img/logo1.jpg);
   }
 }

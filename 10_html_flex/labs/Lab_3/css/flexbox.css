@@ -3,31 +3,37 @@
 ==================================== */
 
 @media (min-width: 769px) {
+  .main-header,
+  .main-nav,
+  .row {
+    display: flex;
+  }
+  .row {
+    gap: 12px;
+  }
 
-	.main-header,
-	.main-nav,
-	.row {
-		display: flex;
-	}
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+  }
 
-	.main-header {
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.col {
-		flex: 1;
-
-	}
-
-
+  .col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-group {
+    display: flex;
+    gap: 15px;
+    /* justify-content: space-between; */
+    justify-content: center;
+    margin-top: auto;
+  }
 }
 
 @media (min-width: 1025px) {
-
-	.main-header {
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

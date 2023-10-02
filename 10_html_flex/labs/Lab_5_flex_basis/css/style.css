@@ -22,16 +22,33 @@ img {
   padding: 10px;
 }
 
+/*  flex: 0 0 SIZE */
+
 @media (min-width: 420px) {
   .box {
+    display: flex;
   }
   .box__img {
+    flex: 0 0 30%;
+  }
+  .box__img img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 /*  640 - ошибочный break point.  Показать почему */
 @media (min-width: 640px) {
   .posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   .box {
+    flex-basis: 48%;
+  }
+  .box__img {
+    flex: 0 0 50%;
   }
 }

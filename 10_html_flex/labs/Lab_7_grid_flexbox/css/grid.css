@@ -1,25 +1,41 @@
-/* grid system -- mobile first! */
+:root {
+  --cols: 2;
+  --gap: 20px;
+  --gaps: calc(var(--gap) * (var(--cols) - 1));
+  --mw: 1400px;
+}
 
 @media (min-width: 576px) {
   .container {
+    max-width: var(--mw);
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
   }
-
+  /* col - 1% - col => (100% - 1%)/2  = 49.5% */
   .col {
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: calc((100% - var(--gaps)) / var(--cols));
   }
 }
 
 @media (min-width: 768px) {
-  .container {
-  }
-    /*  col - 2% - col - 2% - col  = (100% - 4%)/3  = 32 */
-  .col {
+  :root {
+    --cols: 3;
+    --gap: 15px;
   }
 }
 
 @media (min-width: 992px) {
-  .container {
+  :root {
+    --cols: 4;
   }
-  /*  col - 2% - col - 2% - col - 2% - col = (100% - 6%)/4  = 23.5 */
-  .col {
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --cols: 5;
   }
 }
