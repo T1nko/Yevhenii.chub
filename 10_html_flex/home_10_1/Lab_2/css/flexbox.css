@@ -40,14 +40,17 @@
 @media (min-width: 1025px) {
   .main-header {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
-  .main-nav .main-header__logo .name{
+    .main-nav {
+      margin-left: auto;
+    }
+  .main-nav, .name{
     width: unset;
     order: 0;
   }
-  .main-nav{
-   width: 0;
+  .main-header__logo{
+    order: 0;
   }
   .row {
     flex-wrap: nowrap;
