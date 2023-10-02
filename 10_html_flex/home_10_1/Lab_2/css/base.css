@@ -99,6 +99,7 @@ img {
   border-radius: 80px;
   background: url(../img/logo.jpg) no-repeat;
   background-size: cover;
+  margin: auto;
 }
 
 /* ---- Page Elements ---- */
@@ -125,7 +126,7 @@ img {
   }
   .tagline {
     font-size: 1.4em;
-  }
+  }  
 }
 @media (min-width: 1025px) {
   .main-header,
