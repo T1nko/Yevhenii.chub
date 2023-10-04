@@ -1,0 +1,11 @@
+
+https://github.com/romannikiforov/sass_practice
+
+
+--- Клонуємо репозіторій 
+git clone git@github.com:romannikiforov/sass_practice.git  11_scss
+
+-- заходимо в каталог проекту та інсталюємо пакети
+cd 11_scss
+npm i
+
