@@ -1,0 +1,25 @@
+.slogan-box__title {
+  font-size: 4rem;
+}
+.header-top {
+  margin-bottom: 60px;
+}
+.header-top::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 120px;
+  border: 6px solid #c01f4d;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  background: url(../i/logo.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,50 @@
+.main-nav {
+    order: -1;
+    margin-top: 1em;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em 1em;
+    border: 1px solid #eee;
+    border-radius: 0.25em;
+  }
+  
+  .card__title {
+    font-size: 2rem;
+    color: #278da4;
+    margin: 0.35em 0 0;
+    line-height: 1.25;
+  }
+  
+  .btn_info {
+    color: #fff;
+    display: inline-block;
+    font-size: 0.85em;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.75rem 1.54rem;
+    border-radius: 0.354rem;
+    background-color: #278da4;
+    margin-top: auto;
+  }
+  .btn_info:hover {
+    opacity: 0.8;
+  }
+  .btn_callout {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.35rem;
+    background-color: #c01f4d;
+    margin-top: auto;
+  }
+  .btn_callout:hover {
+    opacity: 0.8;
+  }
