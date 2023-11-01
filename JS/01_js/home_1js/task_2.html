@@ -26,9 +26,9 @@
      Як має працювати програма показано на відео task_2.mkv
       */
       const result = document.getElementById("result");
-      const n1 = "";
-      const n2 = "";
-      const sum = n1 + n2;
+      const n1 = prompt("Enter first number").trim();
+      const n2 = prompt("Enter second number").trim();
+      const sum = parseInt(+n1) + parseInt(+n2);
       result.textContent = sum;
     </script>
   </body>

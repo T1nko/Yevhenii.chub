@@ -30,14 +30,14 @@
       const f = false;
       const st = "";
 
-      console.log("x + y = 30, Res: ", x + y); // Має бути  30
-      console.log("y + b = 21, Res: ", y + b); // Має бути  21
-      console.log("y + b = 300, Res: ", z * 2); // Має бути  300
-      console.log("st + z = 150, Res: ", st + z); // Має бути  150
-      console.log("f + z = 150, Res: ", f + z); // Має бути  150
-      console.log("y + z = 170, Res: ", y + z); // Має бути  170
-      console.log("x + b + z = 161, Res: ", x + b + z); // Має бути  161
-      console.log("z - x * y =  -50, Res: ", z - x * y); // Має бути  -50
+      console.log("x + y = 30, Res: ", x + +y); // Має бути  30
+      console.log("y + b = 21, Res: ", +y + +b); // Має бути  21
+      console.log("y + b = 300, Res: ", parseInt(z) * 2); // Має бути  300
+      console.log("st + z = 150, Res: ", +st + parseInt(z)); // Має бути  150
+      console.log("f + z = 150, Res: ", +f + parseInt(z)); // Має бути  150
+      console.log("y + z = 170, Res: ", +y + parseInt(z)); // Має бути  170
+      console.log("x + b + z = 161, Res: ", x + +b + parseInt(z)); // Має бути  161
+      console.log("z - x * y =  -50, Res: ", parseInt(z) - x * +y); // Має бути  -50
     </script>
   </body>
 </html>
