@@ -44,14 +44,46 @@
     } 
     */
 
-    let a = 10;
-    let b = 0;
-    let c = 100
-    if (a > b && b > c) {
-      console.log("True")
-    } else {
-      console.log("False")
+    /*  let a = 10;
+     let b = 0;
+     let c = 100
+     if (a > b && b > c) {
+       console.log("True")
+     } else {
+       console.log("False")
+     } 
+     */
+
+    const a = 10;
+
+    /*  if (a > 10) {
+       console.log("a > 10")
+     } else {
+       console.log("a < 10")
+     } */
+
+    /*    a < 10 ?
+         console.log("a > 10")
+         : console.log("a < 10")
+    */
+
+    while (true) {
+      let answer = prompt("Enter number or 'q' to exit");
+      if (answer === null) {
+        break;
+      }
+      if (answer.trim() === "q") {
+        break;
+      }
+
+      answer = +answer.trim()
+
+      if (answer && isFinite(answer)) {
+        console.log(answer);
+        break;
+      }
     }
+
 
   </script>
 </body>
