@@ -1,32 +1,60 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <title>Home work</title>
+    <meta charset="utf-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <title>Home work</title>
-  <meta charset="utf-8" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
-</head>
+  <body>
+    <div class="container">
+      <h2>for</h2>
+      <ul id="result_1" class="list-group">
+        <li class="list-group-item">Frist</li>
+      </ul>
 
-<body>
-  <div class="container">
-    <h2>for</h2>
-    <ul id="result_1" class="list-group">
-      <li class="list-group-item">Frist</li>
-    </ul>
+      <h2>while</h2>
+      <ul id="result_2" class="list-group"></ul>
+    </div>
+    <!--  /container -->
 
-    <h2>while</h2>
-    <ul id="result_2" class="list-group"></ul>
-  </div>
-  <!--  /container -->
+    <script>
+      const res1 = document.getElementById("result_1");
+      let res = "";
 
-  <script>
-    const res1 = document.getElementById("result_1");
+      for (let i = 1; i <= 5; i++) {
+        let num = i;
+        let prod = i * i;
+        res += `<tr>
+          <td>${num}</td>
+          <td>${prod}</td>
+          </tr>`;
+      }
+      res = `<table>${res}</table>`;
+      res1.innerHTML = res;
 
-    const res2 = document.getElementById("result_2");
+      const res2 = document.getElementById("result_2");
+      let i = 1;
+      let out = "";
 
-  </script>
-</body>
-
+      while (i <= 5) {
+        let num = i;
+        let prod = i * i;
+        out += `
+        <tr>
+          <td>${num}</td>
+          <td>${prod}</td>
+        </tr>`;
+        i++;
+      }
+      out = `<table>${out}</table>`;
+      res2.innerHTML = out;
+    </script>
+  </body>
 </html>
