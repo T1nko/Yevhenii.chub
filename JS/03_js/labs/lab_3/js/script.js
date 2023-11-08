@@ -52,11 +52,12 @@ function sortPlayers(d){
   }
 }
 
-/*function sortByName (u1, u2){
-  return u1.name.toLowerCase().localeCompare(u2.name.toLowerCase())
+/*function sortByName (a, b){
+  return a.name.toLowerCase().localeCompare(b.name.toLowerCase())
 }*/
 
-function sortPlayersByName(d){
+function sortPlayersByName(d) {
+  //const newUsers = sortByName;
   const newUsers = [...users];
   return function(){
     newUsers.sort( (a,b) => 
