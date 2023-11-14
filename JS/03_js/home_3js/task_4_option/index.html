@@ -33,10 +33,27 @@ ul з id="list"
       let arr = ["Tom", "Steve", "Bill", "Rita", "Pete", "Ashley"];
       const list = document.getElementById("list");
 
-      // Сигнатура map
-      function map(list, fn) {
+      // Оголошую функцію map з параметрами (масив та функція-трансформатор)
+      function map(arr, fn) {
         // todo
+
+        // Використовую map для масиву, переданого як аргумент, та застосовую функцію-трансформатор до кожного його елементу
+        return arr.map(fn);
       }
+
+      // Функція, яка трансформує елемент масиву в необхідний вигляд
+      function transformElement(item) {
+        return `<li class="list-group-item">${item}</li>`; // Повертаю рядок з тегом <li>, який містить елемент масиву
+      }
+
+      // Використовую функцію map для трансформації кожного елемента масиву
+      const transformedList = map(arr, transformElement);
+
+      // Сортірую трансформований масив за алфавітом
+      transformedList.sort();
+
+      // Додаю трансформовані елементи в елемент з id="list" у вигляді рядка HTML
+      list.innerHTML = transformedList.join("");
     </script>
   </body>
 </html>

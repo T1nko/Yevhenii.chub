@@ -22,21 +22,21 @@
     </div>
     <script>
       /*
-В елемент select вивести сгрупований вік користувачів
-Для групування використовувати ітератор reduce
+      В елемент select вивести сгрупований вік користувачів
+      Для групування використовувати ітератор reduce
 
-Тобто у нас є 9 users та їх вік відповідно  20, 30, 40
-На підставі масиву users треба сформувати наступний код 
+      Тобто у нас є 9 users та їх вік відповідно  20, 30, 40
+      На підставі масиву users треба сформувати наступний код
 
-    <option value="-1">Choose age</option>
-    <option value="20">20</option>
-    <option value="30">30</option>
-    <option value="40">40</option>
+          <option value="-1">Choose age</option>
+          <option value="20">20</option>
+          <option value="30">30</option>
+          <option value="40">40</option>
 
-та вивести його в елемент select з id="users-select" 
+      та вивести його в елемент select з id="users-select"
 
-Зверніть увагу - вік має бути сортирований від меньшого до більшого  
-*/
+      Зверніть увагу - вік має бути сортирований від меньшого до більшого
+      */
 
       const usersSelect = document.getElementById("users-select");
 
@@ -53,6 +53,36 @@
       ];
 
       /*  todo  */
+
+      // Використовую reduce для групування унікальних значень віку
+      const ageGroups = users
+        .reduce((acc, user) => {
+          const age = user.age;
+          if (!acc.includes(age)) {
+            acc.push(age);
+          }
+          return acc;
+        }, [])
+        .sort((a, b) => parseInt(a) - parseInt(b)); //Сортую за зростанням
+
+      // Міняю існуючий елемент <option>
+      usersSelect.innerHTML = "<option value='-1'>Choose age</option>";
+
+      // Додаємо елементи <option> для кожної групи віку
+      ageGroups.forEach((age) => {
+        const option = document.createElement("option");
+        option.value = age;
+        option.text = age;
+        usersSelect.add(option);
+      });
+
+      usersSelect.onchange = function () {
+        //Функція, що не дає вибрать "Choose age"
+        if (+this.value === -1) {
+          alert("Choose right age"); //З'являється вікно, якщо вибрали "Choose age"
+          return;
+        }
+      };
     </script>
   </body>
 </html>

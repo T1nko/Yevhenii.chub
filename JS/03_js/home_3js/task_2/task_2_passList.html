@@ -25,9 +25,23 @@ removePassenger(name, list);
 
       <script>
         const pList = [];
-        function addPassenger(name, list) {}
+        function addPassenger(name, list) {
+          const emptyIndex = list.findIndex(
+            (passenger) => passenger === undefined
+          ); // шукаю перший вільний індекс.
+          if (emptyIndex !== -1) {
+            list[emptyIndex] = name; //якщо знахожу вільний індекс, то записую ім'я на цей вільний індекс
+          } else {
+            list.push(name); // якщо немає вільного індекса, то додаю в кінець масива
+          }
+        }
 
-        function removePassenger(name, list) {}
+        function removePassenger(name, list) {
+          const index = list.indexOf(name); // Шукаю індекс елемента з ім'ям, яке хочу видалити
+          if (index !== -1) {
+            list[index] = undefined; // Якщо ім'я знайшлось, то встановлюю елемент з цим індексом на undefined
+          }
+        }
 
         // usage
         // add passenger

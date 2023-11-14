@@ -31,7 +31,7 @@ const sortUp = document.getElementById("sort-up");
 const sortNameDown = document.getElementById("sort-name-down");
 const sortNameUp = document.getElementById("sort-name-up");
 
-/* function showPlayers(usrs){
+function showPlayers(usrs){
   let out = "";
   for(let i = 0, len = usrs.length; i < len; i++){
     const u = usrs[i];
@@ -42,29 +42,7 @@ const sortNameUp = document.getElementById("sort-name-up");
   </tr>`;
   }
   players.innerHTML = out;
-} */
-
-/* function showPlayers(usrs){
-  let out = "";
-  users.forEach( (u, i) => {
-    out += `<tr class="text-center">
-    <td>${i + 1}</td>
-    <td>${u.name}</td>
-    <td>${u.score}</td>
-  </tr>`
-  })
-  players.innerHTML = out;
-} */
-
-function showPlayers(users){
-  players.innerHTML = users.map( (u, i) => `<tr class="text-center">
-    <td>${i + 1}</td>
-    <td>${u.name}</td>
-    <td>${u.score}</td>
-  </tr>`).join('');
- 
 }
-
 
 function sortPlayers(d){
   return function(){
