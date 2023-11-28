@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Grig layout</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .container {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns:
+        [left-start] 1fr [left-end left-gutter-start] 
+        10px
+        [content-start] 3fr [content-end]
+        10px 
+        [right-start] 1fr [right-end]  
+        ;
+      grid-template-rows:  
+        [header-start] auto [header-end]
+        10px 
+        [center-start] 1fr [center-end]
+        10px 
+        [footer-start] auto [footer-end]
+      ;  
+    }
+
+    .header {
+      grid-column: left-start / right-end;
+      grid-row: header-start / header-end;
+    }
+    .left-sidebar {
+       grid-column: left-start / left-end;
+      grid-row: center-start / center-end;
+    }
+    .content {
+      grid-column: content-start / content-end;
+      grid-row: center-start / center-end;
+    }
+   .footer {
+          grid-column: left-start / right-end;
+      grid-row: footer-start / footer-end;
+        }
+.right-sidebar {
+     grid-column: right-start / right-end;
+      grid-row: center-start / center-end;
+  
+
+}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="footer item item__orange">Footer</div>
+    <div class="left-sidebar item item__purple">Left sidebar</div>
+    <div class="content item item__green">Content</div>
+    <div class="right-sidebar aside-2 item item__yellow"> Right sidebar</div>
+    <div class="header item item__blue">Header</div>
+    <!-- 
+ 
+    <div class="item item__yellow"></div>
+    <div class="item item__maroon"></div>
+
+    <div class="item item__darkorchid"></div>
+    <div class="item item__darksalmon"></div>
+    <div class="item item__deepskyblue"></div>
+    <div class="item item__greenyellow"></div>
+    <div class="item item__maroon"></div>
+
+    <div class="item item__rebeccapurple"></div>
+
+
+    <div class="item item__steelblue"></div>
+    <div class="item item__tan"></div>
+    <div class="item item__tomato"></div>
+
+    <div class="item item__violet"></div>
+    <div class="item item__wheat"></div>
+    <div class="item item__gold"></div>
+
+     -->
+  </div>
+  <!--  /.container  -->
+</body>
+
+</html>

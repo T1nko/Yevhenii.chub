@@ -1,0 +1,27 @@
+@supports (grid-area: auto) {
+  @media (min-width: 768px) {
+    .container {
+      max-width: none;
+    }
+
+    .top-image-box,
+    .main-area > *,
+    .aside-box,
+    .footer-box {
+      display: grid;
+      grid-template-columns: 1fr repeat(2, minmax(auto, 450px)) 1fr;
+    }
+
+    .top-img,
+    .about-us-box,
+    .main-content-box,
+    .aside-box,
+    .more-content-box {
+      grid-column: 2/4;
+    }
+    .twin,
+    .footer-box__content {
+      grid-column: span 2;
+    }
+  }
+}
