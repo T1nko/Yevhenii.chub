@@ -72,10 +72,14 @@
 
     btn.onclick = function () { };
 */
-      const showtime = document.getElementById("showtime");
-      const startButton = document.getElementById("start");
 
-      let totalSeconds;
+      const showtime = document.getElementById("showtime");
+      const btn = document.getElementById("start");
+      const box = document.querySelector(".box");
+
+      const norm = (v) => (v < 10 ? "0" + v : v);
+      let delay = 86400 * 4 + 10;
+      //delay = 5;
       let countdown;
 
       function formatTime(seconds) {
@@ -83,38 +87,27 @@
         const hh = Math.floor((seconds % 86400) / 3600);
         const mm = Math.floor((seconds % 3600) / 60);
         const ss = seconds % 60;
-        return `${String(dd).padStart(2, "0")}d ${String(hh).padStart(
-          2,
-          "0"
-        )}h:${String(mm).padStart(2, "0")}m:${String(ss).padStart(2, "0")}s`;
+
+        return `${norm(dd)}d ${norm(hh)}h:${norm(mm)}m:${norm(ss)}s`;
       }
 
       function doAction() {
-        window.location.href = "https://www.google.com";
+        box.style.display = "block";
       }
 
       function countdownFunction() {
-        if (totalSeconds <= 0) {
+        if (delay <= 0) {
           clearInterval(countdown);
           doAction();
         } else {
-          totalSeconds--;
-          showtime.innerHTML = formatTime(totalSeconds);
+          delay--;
+          showtime.innerHTML = formatTime(delay);
         }
       }
 
-      startButton.onclick = function () {
+      btn.onclick = function () {
         if (!countdown) {
-          const days = parseInt(prompt("Введіть кількість днів:") || 0);
-          const hours = parseInt(prompt("Введіть кількість годин:") || 0);
-          const minutes = parseInt(prompt("Введіть кількість хвилин:") || 0);
-          const seconds = parseInt(prompt("Введіть кількість секунд:") || 0);
-
-          totalSeconds = days * 86400 + hours * 3600 + minutes * 60 + seconds;
-
-          if (totalSeconds > 0) {
-            countdown = setInterval(countdownFunction, 1000);
-          }
+          countdown = setInterval(countdownFunction, 1000);
         }
       };
     </script>
