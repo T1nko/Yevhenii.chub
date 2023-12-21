@@ -1,0 +1,15 @@
+[
+    {
+        "image": "i/pizza-1.png",
+        "title": "Cheese pizza",
+        "price": "25.00",
+        "description": "Опис Cheese pizza"
+    },
+    {
+        "image": "i/pizza-2.png",
+        "title": "Shrimp pizza",
+        "price": "35.00",
+        "description": "Опис Shrimp pizza"
+    },
+    // додайте інші картки
+]

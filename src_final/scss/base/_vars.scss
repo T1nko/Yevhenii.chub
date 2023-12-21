@@ -1,0 +1,50 @@
+//fonts
+$google-font: "https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Quicksand&family=Ubuntu:wght@300;400&display=swap";
+$prefix: prefix- !default;
+$baseFontSize: 16px;
+$baseFontFamily: "Ubuntu", sans-serif;
+$quickFontFamily: "Quicksand", sans-serif;
+$nunitroFontFamily: "Nunitro", sans-serif;
+$mediumFontWeight: 500;
+
+$mobilePadding: (12px / $baseFontSize) * 1rem;
+$desktopPadding: 1rem;
+
+// Paths
+
+$imagesPath: "../i/";
+$fontsPath: "../fonts/";
+$usersFilesPath: "../userfiles/";
+
+// Colors
+$black: #000000;
+$white: #ffffff;
+$blue: #0d6efd !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #d63384 !default;
+$red: #dc3545 !default;
+$bannerBg:#FFEAA2;
+$boxBg: #F5F7FA;
+$numColor:#E63A28;
+$monthColor:#222;
+$btnColor:#E63A28;
+$pageBorderColor:#EEEEEE;
+$BorderColor: #CCCCCC;
+$articleBg:#C4C4C4;
+$fotterBgColor:#7828E6;
+$boxMenuColor: #333333;
+$boxMenuBorderColor: #DDDDDD;
+$btnSubColor:#e65e4f;
+
+
+
+$colors: (
+  "black": $black,
+  "white": $white,
+  "blue": $blue,
+  "indigo": $indigo,
+  "purple": $purple,
+  "pink": $pink,
+  "red": $red,
+) !default;

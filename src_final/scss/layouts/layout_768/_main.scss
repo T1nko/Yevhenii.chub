@@ -1,0 +1,22 @@
+.slide {
+  flex: 0 0 50%; /* 2 картки на екрані */
+}
+.ourStory-onion-img{
+  max-width: 100px;
+}
+
+.ourStrength-vacter{
+  top: 100px;
+    right: 0;
+    max-width: 200px;
+  }
+
+  .ourStrength-blocks{
+    flex-direction: row;
+    flex: 1;
+}
+
+.ourStrength-block{
+  flex: 0 0 50%;
+  padding: 0 20px;
+}
