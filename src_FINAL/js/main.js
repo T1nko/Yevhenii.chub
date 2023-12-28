@@ -32,7 +32,14 @@ const config = {
           settings: {
               slidesToShow: 3,
           }
-      }
+      },
+      {
+        breakpoint: 9900,
+        settings: {
+            slidesToShow: 4,
+        }
+      
+    }
   ]
 }
 
