@@ -1,0 +1,86 @@
+.resInput{
+    border: 1px solid #e4ded9;
+    border-radius: 6px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    color: #777777;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.resForm{
+    display: flex;
+    flex-wrap: wrap;
+}
+.bookNowBtn a{
+    font-weight: 600;
+    border: 2px solid #fbb200;
+    border-radius: 50px;
+    font-size: 16px;
+    padding: 25px;
+    background: #fbb200;
+    color: #ffffff;
+    display: inline-flex;
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 0;
+    margin-bottom: 40px;
+}
+.Reservation{
+    margin-top: 25px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.book-leaf-big{
+    position: absolute;
+    max-width: 72px;
+    top: -33px;
+    right: 0;
+
+}
+.book-leaf-big img{
+    width: 100%;
+
+}
+
+.resPizza{
+    width: 100%;
+}
+.resBook-jamun{
+    max-width: 90px;
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.resImgs{
+    position: relative;
+}
+
+.leafsOnPizza{
+    position: relative;
+    max-width: 420px;
+
+}
+.book-leaf {
+    position: absolute;
+}
+.book-leaf img{
+    max-width: 66px;
+}
+.book-leaf-1 {
+    top: -1%;
+    left: -10%;
+}
+.book-leaf-2 {
+    top: 19%;
+    left: -11%;
+}
+.book-leaf-3 {
+    top: 33%;
+    left: -3%;
+    z-index: -1;
+}

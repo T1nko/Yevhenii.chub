@@ -418,6 +418,7 @@ width: 100%;
 }
 .OurStory{
     padding-bottom: 10px;
+    position: relative;
 }
 .OurStory h2{
     margin-bottom: 15px;
@@ -459,12 +460,13 @@ width: 100%;
     position: relative;
     width: 100%;
 }
-.ourStory-pazza-img{
+.ourStory-pizza-img{
     width: 100%;
 }
 .ourStory-black-jamun-img{
     position: absolute;
-    left: -20px;
+    z-index: 1;
+    top: 0;
     height: auto;
     max-width: 100%;
     max-width: 15%;

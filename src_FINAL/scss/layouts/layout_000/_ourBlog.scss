@@ -1,0 +1,100 @@
+.ourBlog{
+    margin-bottom: 50px;
+}
+.blogCards{
+    display: flex;
+    flex-direction: column;
+    }
+.blogCard__item{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+
+    &-img{
+        overflow: hidden;
+        border-radius: 20px;
+        margin-bottom: 28px;
+    }
+    &-img img{
+        width: 100%;
+        min-height: 230px;
+        object-fit: cover;
+    }
+    &-date{
+        color: #777777;
+        font-size: 16px;
+        line-height: 34px;
+        position: relative;
+        width: fit-content;
+        margin: 0 0 10px 0;
+    }
+    &-date::before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: calc(100% + 15px);
+        background: #777777;
+        width: 75px;
+        height: 2px;
+        transform: translateY(-50%);
+        opacity: 0.4;
+    }
+    &-desc{
+        font-size: 20px;
+        line-height: 34px;
+        margin: 0;
+        
+    }
+    &-author{
+        padding-top: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &-img{
+            overflow: hidden;
+            border-radius: 100%;
+            width: 74px;
+            height: 74px;
+            vertical-align: middle;
+        }
+        &-data{
+            padding-left: 30px;
+            vertical-align: middle;
+            & h6{
+                font-size: 18px;
+                line-height: 30px;
+                font-weight: 600;
+                margin: 0;
+                line-height: 30px;
+            }
+            & span{
+                font-size: 16px;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                color: #777777;
+
+                line-height: 30px;
+
+            }
+        }
+    }
+    &-readMore{
+        margin-top: 10px;
+        line-height: 30px;
+
+        & a{
+            text-decoration: none;
+            color: #f22e3e;
+            font-weight: 600;
+            cursor: pointer;
+            
+            & img{
+                padding-left: 15px;
+                vertical-align: middle;
+            }
+        }
+    }
+
+}

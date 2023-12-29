@@ -59,15 +59,3 @@ ssm.addState({
     initDesktop();
   },
 });
-
-// Додавання товару до кошика
-$('.menu-item-order').click(function() {
-    var productName = $(this).closest('.slider-item').find('.menu-item-title h3').text();
-    var productPrice = $(this).closest('.slider-item').find('#pazzaPrise').text();
-    // Тут код для додавання товару до кошика
-});
-
-// Логіка відкриття та закриття кошика
-$('.headerBar__btn-cart').click(function() {
-    $('.cart-container').toggle(); // Показати або сховати кошик
-});

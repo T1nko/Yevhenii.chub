@@ -1,8 +1,8 @@
 const config = {
   arrows: true,
   autoplay: true,
-  speed: 1500,
-  autoplaySpeed: 1500,
+  speed: 800,
+  autoplaySpeed: 2000,
   slidesToShow: 1,
   slidesToScroll: 1,
   appendArrows: '.mybuttons',
